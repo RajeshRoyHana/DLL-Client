@@ -25,7 +25,7 @@ this.vantaEffect = NET({
 
   THREE,
 
-  mouseControls: false,
+  mouseControls: true,
   touchControls: false,
   gyroControls: false,
 
@@ -35,8 +35,8 @@ this.vantaEffect = NET({
   scale: 1,
   scaleMobile: 1,
 
-  color: 0xffffff,
-  backgroundColor: 0x252534,
+  color: 0xff3f81,
+  backgroundColor: 0x23153c,
 
   points: 10,
   maxDistance: 22,
