@@ -1,5 +1,5 @@
  /* IMAGE BOX */
-    .hero-img {
+    /* .hero-img {
       position: relative;
     }
 
@@ -24,4 +24,47 @@
 .hero .container {
   position: relative;
   z-index: 1;
+} */
+
+
+.hero {
+  position: relative;
+  min-height: 550px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  padding: 100px 0;
+
+  background: #252534;
+}
+
+/* keep text above vanta canvas */
+.hero .container {
+  position: relative;
+  z-index: 10;
+}
+
+/* Main heading */
+.hero h1 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Highlight text */
+.hero h1 span {
+  color: #7dd3fc;
+}
+
+/* Paragraph */
+.hero p {
+  color: rgba(255,255,255,0.75) !important;
+
+  max-width: 700px;
+
+  font-size: 18px;
+
+  margin-top: 20px;
 }

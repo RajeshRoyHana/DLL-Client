@@ -1,6 +1,9 @@
 import { AfterViewInit, Component, OnDestroy } from '@angular/core';
 
 
+import * as THREE from 'three';
+import NET from 'vanta/dist/vanta.net.min'
+
 
 @Component({
   selector: 'app-home-hero-component',
@@ -8,10 +11,50 @@ import { AfterViewInit, Component, OnDestroy } from '@angular/core';
   templateUrl: './home-hero-component.html',
   styleUrl: './home-hero-component.css',
 })
-export class HomeHeroComponent  {
-  
+export class HomeHeroComponent  
+
+  implements AfterViewInit, OnDestroy {
+
+  vantaEffect: any;
+
+  ngAfterViewInit(): void {
+
+ 
+this.vantaEffect = NET({
+  el: '#hero-bg',
+
+  THREE,
+
+  mouseControls: false,
+  touchControls: false,
+  gyroControls: false,
+
+  minHeight: 200,
+  minWidth: 200,
+
+  scale: 1,
+  scaleMobile: 1,
+
+  color: 0xffffff,
+  backgroundColor: 0x252534,
+
+  points: 10,
+  maxDistance: 22,
+  spacing: 18,
+
+  showDots: true
+});
 
 
+  }
 
+  ngOnDestroy(): void {
+
+    if (this.vantaEffect) {
+      this.vantaEffect.destroy();
+    }
+
+  }
 
 }
+
