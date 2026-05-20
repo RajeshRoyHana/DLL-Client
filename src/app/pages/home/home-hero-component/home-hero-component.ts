@@ -36,13 +36,13 @@ this.vantaEffect = NET({
   scaleMobile: 1,
 
   color: 0xff3f81,
-  backgroundColor: 0x23153c,
+  backgroundColor: 0x30305,
 
   points: 10,
   maxDistance: 22,
-  spacing: 18,
+  spacing: 30,
 
-  showDots: true
+  showDots: false
 });
 
 
