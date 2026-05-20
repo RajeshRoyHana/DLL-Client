@@ -1,0 +1,20 @@
+
+    /* FOOTER */
+    .footer {
+      background: #000;
+      color: #aaa;
+      padding: 60px 0 20px;
+    }
+
+    .footer h6 {
+      color: #fff;
+    }
+
+    .footer p {
+      font-size: 14px;
+    }
+
+    .footer-bottom {
+      font-size: 13px;
+      color: #777;
+    }

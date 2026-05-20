@@ -1,0 +1,32 @@
+/* DROPDOWN */
+    .dropdown-menu {
+      border-radius: 0;
+      border: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .dropdown-item {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 10px 20px;
+    }
+
+    .dropdown-item:hover {
+      background: #111;
+      color: #fff;
+    }
+
+    /* NAV */
+    .navbar-custom {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .dropdown-toggle-split::after {
+      margin-left: 2px;
+    }
+
+    .nav-item .d-flex {
+      align-items: center;
+    }
