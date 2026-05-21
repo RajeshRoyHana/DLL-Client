@@ -1,5 +1,5 @@
 .global-offices {
-  background-color: #050505; /* same dark feel */
+   background-color: #202020;
 }
 
 .office-box {
@@ -15,5 +15,8 @@
 
 .office-icon {
   font-size: 30px;
-  color: #17a2b8;
+  color: #7dd3fc;
+}
+.test-info-custom{
+    color: #7dd3fc;
 }
