@@ -1,45 +1,30 @@
-
-
-
 .hero {
   position: relative;
   min-height: 800px;
-
   display: flex;
   align-items: center;
-
   overflow: hidden;
-
   padding: 100px 0;
-
   background-color: #202020;
 }
 
-
-/* keep text above vanta canvas */
 .hero .container {
   position: relative;
   z-index: 10;
 }
 
-/* Main heading */
 .hero h1 {
   color: #ffffff;
   font-weight: 700;
 }
 
-/* Highlight text */
 .hero h1 span {
   color: #7dd3fc;
 }
 
-/* Paragraph */
 .hero p {
-  color: rgba(255,255,255,0.75) !important;
-
+  color: rgba(255, 255, 255, 0.75) !important;
   max-width: 700px;
-
   font-size: 18px;
-
   margin-top: 20px;
 }
