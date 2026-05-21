@@ -1,0 +1,54 @@
+
+.main-content {
+    flex: 1;
+}
+
+/* HERO */
+.hero {
+    padding-top: 120px;
+    background: #f7f7f7;
+}
+
+.hero-text h1 {
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.hero-text span {
+    color: #141414;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+/* CARD */
+.service-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    transition: .3s;
+    height: 100%;
+}
+
+.service-card:hover {
+    border-color: #000;
+    transform: translateY(-5px);
+}
+
+/* CTA */
+.cta {
+    background: linear-gradient(to right, #000, #2b0000);
+    color: #fff;
+    padding: 60px;
+}
+
+.cta h2 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.cta .btn {
+    background: #c62828;
+    border: none;
+}
