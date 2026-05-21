@@ -1,0 +1,17 @@
+     /* SECTION */
+    .section-title {
+      text-align: center;
+      margin: 100px 0 20px;
+    }
+
+    .section-title h2 {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    /* FEATURES */
+    .feature-box {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 25px;
+    }
