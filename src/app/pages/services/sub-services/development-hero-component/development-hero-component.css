@@ -1,0 +1,45 @@
+  /* HERO */
+        .hero {
+            padding: 140px 0 100px;
+        }
+
+        .hero-label {
+            font-size: 11px;
+            letter-spacing: 2px;
+            background: #eee;
+            display: inline-block;
+            padding: 6px 10px;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            line-height: 1;
+            font-weight: 700;
+        }
+
+        .hero-red {
+            color: #0c0b0b;
+        }
+
+        .hero-img {
+            position: relative;
+        }
+
+        .hero-img img {
+            width: 100%;
+            border: 1px solid #111;
+        }
+
+        .floating-icon {
+            position: absolute;
+            right: -15px;
+            bottom: -15px;
+            background: #474747;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+        }
