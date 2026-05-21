@@ -1,0 +1,91 @@
+.client-carousel {
+  background: #f7f7f7;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+/* Title */
+.carousel-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* Slider */
+.logo-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Moving Track */
+.logo-track {
+  display: flex;
+  align-items: center;
+  width: calc(250px * 12);
+  animation: scroll 25s linear infinite;
+}
+
+/* Logos */
+.logo {
+  width: 200px;
+  margin: 0 25px;
+  flex-shrink: 0;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.logo img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Infinite Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .carousel-title {
+    font-size: 24px;
+  }
+
+  .logo {
+    width: 140px;
+    margin: 0 15px;
+  }
+
+}
+
+@keyframes scrollReverse {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.logo-track:hover {
+  animation-play-state: paused;
+}
+

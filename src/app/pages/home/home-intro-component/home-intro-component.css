@@ -1,0 +1,48 @@
+
+/* Section */
+.home-intro {
+  background-color: #f4f4f4;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+}
+
+/* Title */
+.intro-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+
+/* Description */
+.intro-text {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+/* Image */
+.intro-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-intro {
+    text-align: center;
+  }
+
+  .intro-title {
+    font-size: 28px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+  }
+}
