@@ -9,7 +9,6 @@ import NET from 'vanta/dist/vanta.net.min'
   selector: 'app-home-hero-component',
   imports: [],
   templateUrl: './home-hero-component.html',
-  styleUrl: './home-hero-component.css',
 })
 export class HomeHeroComponent  
 

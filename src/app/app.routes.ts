@@ -1,13 +1,11 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home-component/home-component';
-import { CareerComponent } from './pages/career/career-component/career-component';
-import { CareerDetailsComponent } from './pages/career/career-details-component/career-details-component';
 import { AboutComponent } from './pages/about/about-component/about-component';
 import { FaqComponent } from './pages/faq/faq-component/faq-component';
 import { ContactusComponent } from './pages/contactUs/contactus-component/contactus-component';
 import { ServicesComponent } from './pages/services/services-component/services-component';
 import { DevelopmentComponent } from './pages/services/sub-services/development-component/development.component';
-import { AiWebToolsComponent } from './pages/services/sub-services/ai-web-tools-component/ai-web-tools-component';
+import { AiWebToolsComponent } from './pages/services/sub-services/ai-web-tools/ai-web-tools-component/ai-web-tools-component';
 
 
 export const routes: Routes = [
@@ -15,16 +13,6 @@ export const routes: Routes = [
     path: '',
     loadComponent: () =>
       import('./pages/home/home-component/home-component').then(m => m.HomeComponent)
-  },
-  {
-    path: 'career',
-    loadComponent: () =>
-      import('./pages/career/career-component/career-component').then(m => m.CareerComponent)
-  },
-  {
-    path: 'career-details',
-    loadComponent: () =>
-      import('./pages/career/career-details-component/career-details-component').then(m => m.CareerDetailsComponent)
   },
   {
     path: 'about',
@@ -49,7 +37,7 @@ export const routes: Routes = [
   {
     path: 'ai-web',
     loadComponent: () =>
-      import('./pages/services/sub-services/ai-web-tools-component/ai-web-tools-component').then(m => m.AiWebToolsComponent)
+      import('./pages/services/sub-services/ai-web-tools/ai-web-tools-component/ai-web-tools-component').then(m => m.AiWebToolsComponent)
   },
   {
     path: 'contact',
