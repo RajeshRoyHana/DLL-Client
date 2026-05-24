@@ -9,36 +9,56 @@ import { ServicesComponent } from './pages/services/services-component/services-
 import { DevelopmentComponent } from './pages/services/sub-services/development-component/development.component';
 import { AiWebToolsComponent } from './pages/services/sub-services/ai-web-tools-component/ai-web-tools-component';
 
-export const routes: Routes = [
-    {
-        path: '', component: HomeComponent
-    },
-    {
-        path: 'career', component: CareerComponent
-    },
-    {
-        path: 'career-details', component: CareerDetailsComponent
-    },
-    {
-        path: 'about', component: AboutComponent
-    },
-    {
-        path: 'faq', component: FaqComponent
-    },
-    {
-        path: 'services', component: ServicesComponent
-    },
-     {
-        path: 'development', component: DevelopmentComponent
-    },
-    {
-        path: 'ai-web', component: AiWebToolsComponent
-    },
-    {
-        path: 'contact', component: ContactusComponent
-    },
-    {
-        path: '**', component: HomeComponent
-    }
 
+export const routes: Routes = [
+  {
+    path: '',
+    loadComponent: () =>
+      import('./pages/home/home-component/home-component').then(m => m.HomeComponent)
+  },
+  {
+    path: 'career',
+    loadComponent: () =>
+      import('./pages/career/career-component/career-component').then(m => m.CareerComponent)
+  },
+  {
+    path: 'career-details',
+    loadComponent: () =>
+      import('./pages/career/career-details-component/career-details-component').then(m => m.CareerDetailsComponent)
+  },
+  {
+    path: 'about',
+    loadComponent: () =>
+      import('./pages/about/about-component/about-component').then(m => m.AboutComponent)
+  },
+  {
+    path: 'faq',
+    loadComponent: () =>
+      import('./pages/faq/faq-component/faq-component').then(m => m.FaqComponent)
+  },
+  {
+    path: 'services',
+    loadComponent: () =>
+      import('./pages/services/services-component/services-component').then(m => m.ServicesComponent)
+  },
+  {
+    path: 'development',
+    loadComponent: () =>
+      import('./pages/services/sub-services/development-component/development.component').then(m => m.DevelopmentComponent)
+  },
+  {
+    path: 'ai-web',
+    loadComponent: () =>
+      import('./pages/services/sub-services/ai-web-tools-component/ai-web-tools-component').then(m => m.AiWebToolsComponent)
+  },
+  {
+    path: 'contact',
+    loadComponent: () =>
+      import('./pages/contactUs/contactus-component/contactus-component').then(m => m.ContactusComponent)
+  },
+  {
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'full'
+  }
 ];
