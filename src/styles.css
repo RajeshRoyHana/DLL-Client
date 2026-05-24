@@ -6,6 +6,11 @@ body {
   background: #f5f5f5;
 }
 
+
+
+
+
+
 /* About Component */
 .side-link {
   display: block;
@@ -43,7 +48,7 @@ body {
 
 
 /* About Hero  Component */
-.hero {
+.about-hero {
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4)),
     url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_BgX1yLQLPewiX7YoOi5r4sJLv8a_xhfUMT9kS2g7lRKJyaZFwk-0kRgom4IZrsa2OyWcceKzepQ2pNRlhGch6jukauiAZG4vpSv8Zx4CGgrSaPjyZy42VX45iIGiKRTYiGyQ52Dva_CmWHf-u0UKknDAXj1D3KTNOMaA_BZ_2NhU1TE-oj2Ni60uh8lOwxq6fYxGWpSreQqgX-QMFlaoJinQrDccEojKMVfVYE5eIP0fu-7sTiHww6PcbJ_MvfXqjRHIic3xfkY');
   background-size: cover;
@@ -55,17 +60,17 @@ body {
 
 
 /* FAQ Component */
-.hero {
+.fac-hero {
   padding: 140px 0 40px;
   text-align: center;
 }
 
-.hero h1 {
+.fac-hero h1 {
   font-size: 60px;
   font-weight: 700;
 }
 
-.hero p {
+.fac-hero p {
   max-width: 700px;
   margin: auto;
   color: #555;
@@ -184,7 +189,7 @@ textarea {
   border-left: 4px solid #131212;
 }
 
-/* CTA */
+/* global  CTA */
 .cta-wrapper {
   padding: 40px 0;
 }
@@ -544,7 +549,7 @@ textarea {
 }
 
 /*Service component */
-.hero {
+.service-hero {
   padding-top: 120px;
   background: #f7f7f7;
 }
@@ -576,22 +581,6 @@ textarea {
   transform: translateY(-5px);
 }
 
-/* CTA */
-.cta {
-  background: linear-gradient(to right, #000, #2b0000);
-  color: #fff;
-  padding: 60px;
-}
-
-.cta h2 {
-  font-size: 38px;
-  font-weight: 700;
-}
-
-.cta .btn {
-  background: #c62828;
-  border: none;
-}
 
 /* ai web service component*/
 .hero {
@@ -952,3 +941,89 @@ textarea {
 .nav-item .d-flex {
   align-items: center;
 }
+
+ /* HERO */
+        .contact-hero {
+            padding: 140px 0 40px;
+            text-align: center;
+        }
+
+        .contact-hero h1 {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        .contact-hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #555;
+        }
+
+        .icon-box i {
+            font-size: 18px;
+        }
+
+        /* LEFT BOX */
+        .contact-box {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 25px;
+            transition: .3s;
+        }
+
+        .contact-box:hover {
+            border-color: #000;
+        }
+
+        .icon-box {
+            width: 40px;
+            height: 40px;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        /* DARK BLOCK */
+        .dark-box {
+            background: #000;
+            color: #fff;
+            padding: 30px;
+        }
+
+        /* FORM */
+        .form-box {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 40px;
+        }
+
+        .form-control,
+        .form-select {
+            background: #eee;
+            border: none;
+            height: 45px;
+        }
+
+        textarea {
+            height: 120px !important;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            border: 1px solid #000;
+        }
+
+        /* RANGE */
+        .range {
+            width: 100%;
+        }
+
+        /* BUTTON */
+        .submit-btn {
+            background: #000;
+            color: #fff;
+            padding: 15px;
+            border: none;
+        }
