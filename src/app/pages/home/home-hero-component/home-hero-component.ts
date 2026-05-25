@@ -10,9 +10,7 @@ import NET from 'vanta/dist/vanta.net.min'
   imports: [],
   templateUrl: './home-hero-component.html',
 })
-export class HomeHeroComponent  
-
-  implements AfterViewInit, OnDestroy {
+export class HomeHeroComponent  implements AfterViewInit, OnDestroy {
 
   vantaEffect: any;
 
