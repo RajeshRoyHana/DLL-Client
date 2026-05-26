@@ -11,4 +11,11 @@ import { FooterComponent } from './Shared/components/footer-component/footer-com
 })
 export class App {
   protected readonly title = signal('Dhaka Logic Ltd.');
+    
+ showFooter = false;
+
+  constructor() {
+    setTimeout(()=>{ this.showFooter = true;},2500)
+  }
+
 }

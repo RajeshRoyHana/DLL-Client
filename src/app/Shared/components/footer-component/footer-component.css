@@ -1,0 +1,12 @@
+
+
+:host {
+  display: block;
+  flex-shrink: 0;
+}
+
+.footer {
+  background-color: #202020;
+  color: #aaa;
+  padding: 60px 0 20px;
+}
