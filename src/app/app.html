@@ -1,14 +1,15 @@
+<div class="app-wrapper">
+  <app-navbar-component></app-navbar-component>
 
-
-  <div class="app-wrapper">
-      <app-navbar-component></app-navbar-component>
-
-      <main class="content">
-       <router-outlet></router-outlet>
-      </main>
-      @if(showFooter()){
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+  <!-- @if(showFooter()){
         <app-footer-component></app-footer-component> 
-      }
-        
-    </div>
-
+      } -->
+  @defer (on viewport) {
+  <app-footer-component></app-footer-component>
+  } @placeholder {
+  <span>Loading...</span>
+  }
+</div>

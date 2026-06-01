@@ -1,24 +1,62 @@
 <app-home-hero-component></app-home-hero-component>
 
 <app-home-intro-component></app-home-intro-component>
+
 <app-home-carousel-component></app-home-carousel-component>
-<app-home-products-component></app-home-products-component>
-<app-home-aidriven-developement-component></app-home-aidriven-developement-component>
-<app-home-service-component></app-home-service-component>
 
-<app-home-office-location-component></app-home-office-location-component>
-
-<app-home-strategy-component></app-home-strategy-component>
-
-<!-- CTA -->
-<section class="container my-5">
-  <div class="home-cta">
-
-    <div>
-      <h2>READY FOR ENGINEERED EXCELLENCE?</h2>
-      <p>Schedule a deep-dive consultation.</p>
-    </div>
-    <button class="btn">START A TECHNICAL CONSULTATION →</button>
-
+@defer (on viewport) {
+  <app-home-products-component></app-home-products-component>
+} @placeholder {
+  <div class="container my-5 text-center defer-placeholder">
+    <p>Loading products...</p>
   </div>
-</section>
+}
+
+@defer (on viewport) {
+  <app-home-aidriven-developement-component></app-home-aidriven-developement-component>
+} @placeholder {
+  <div class="container my-5 text-center defer-placeholder">
+    <p>Loading AI driven development...</p>
+  </div>
+}
+
+@defer (on viewport) {
+  <app-home-service-component></app-home-service-component>
+} @placeholder {
+  <div class="container my-5 text-center defer-placeholder">
+    <p>Loading services...</p>
+  </div>
+}
+
+@defer (on viewport) {
+  <app-home-office-location-component></app-home-office-location-component>
+} @placeholder {
+  <div class="container my-5 text-center defer-placeholder">
+    <p>Loading office locations...</p>
+  </div>
+}
+
+@defer (on viewport) {
+  <app-home-strategy-component></app-home-strategy-component>
+} @placeholder {
+  <div class="container my-5 text-center defer-placeholder">
+    <p>Loading strategy...</p>
+  </div>
+}
+
+@defer (on viewport) {
+  <section class="container my-5">
+    <div class="home-cta">
+      <div>
+        <h2>READY FOR ENGINEERED EXCELLENCE?</h2>
+        <p>Schedule a deep-dive consultation.</p>
+      </div>
+
+      <button class="btn">START A TECHNICAL CONSULTATION →</button>
+    </div>
+  </section>
+} @placeholder {
+  <div class="container my-5 text-center defer-placeholder">
+    <p>Loading consultation section...</p>
+  </div>
+}
