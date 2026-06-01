@@ -20,12 +20,35 @@ export class NavbarComponent {
       });
   }
 
-  handleServicesClick(event: MouseEvent) {
-    if (window.innerWidth <= 991.98) {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-      const toggleButton = document.getElementById('servicesDropdownToggle');
-      toggleButton?.click();
+  onNavClick(event: Event) {
+    if (window.innerWidth > 991.98) return; // only auto-close on mobile
+
+    const target = event.target as HTMLElement | null;
+    if (!target) return;
+
+    const clicked = target.closest('a, button') as HTMLElement | null;
+    if (!clicked) return;
+
+    // don't auto-close when clicking dropdown toggles (they control submenu)
+    if (clicked.classList.contains('dropdown-toggle')) return;
+
+    this.collapseNavbar();
+  }
+
+  collapseNavbar() {
+    const collapseEl = document.getElementById('navbarSupportedContent');
+    if (!collapseEl) return;
+
+    if (collapseEl.classList.contains('show')) {
+      collapseEl.classList.remove('show');
+      // ensure collapsed state
+      collapseEl.classList.add('collapse');
+      collapseEl.setAttribute('aria-expanded', 'false');
+      // remove inline styles applied by Bootstrap JS
+      (collapseEl as HTMLElement).style.display = '';
+
+      const toggler = document.querySelector('.navbar-toggler');
+      if (toggler) toggler.setAttribute('aria-expanded', 'false');
     }
   }
 }
