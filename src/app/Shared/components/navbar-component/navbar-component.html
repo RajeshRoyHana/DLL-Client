@@ -5,45 +5,41 @@
       <img ngSrc="/dll-logo.webp" alt="DLL Logo" width="30" height="30" class="me-2">
       Dhaka Logic Ltd.
     </a>
-    <ul class="navbar-nav mx-auto gap-4">
-      <li class="nav-item dropdown">
-        <div class="d-flex align-items-center">
-          <!-- MAIN LINK -->
-          <a class="nav-link pe-1" routerLink="/services">
-            Services
-          </a>
-          <!-- DROPDOWN TOGGLE -->
 
-          <button class="nav-link dropdown-toggle dropdown-toggle-split" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false" aria-label="Open Services dropdown menu">
-          </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-          <!-- DROPDOWN MENU -->
-          <ul class="dropdown-menu">
-
-            <li>
-              <a class="dropdown-item" routerLink="/development">
-                Development
-              </a>
-            </li>
-
-            <li>
-              <a class="dropdown-item" routerLink="/ai-web">
-                AI-Development Tool
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-
-      </li>
-      <li><a class="nav-link" routerLink="/about">About</a></li>
-      <li><a class="nav-link" routerLink="/faq">FAQ</a></li>
-      <!-- <li><a class="nav-link" routerLink="/career">Career</a></li> -->
-      <li><a class="nav-link" routerLink="contact">Contact</a></li>
-    </ul>
-
-    <button class="btn btn-dark">Get Started</button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto gap-4">
+        <li class="nav-item dropdown">
+          <div class="d-flex align-items-center">
+            <a class="nav-link pe-1" routerLink="/services">
+              Services
+            </a>
+            <button class="nav-link dropdown-toggle dropdown-toggle-split" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false" aria-label="Open Services dropdown menu">
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" routerLink="/development">
+                  Development
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/ai-web">
+                  AI-Development Tool
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="contact">Contact</a></li>
+      </ul>
+      <button class="btn btn-dark mt-3 mt-lg-0">Get Started</button>
+    </div>
   </div>
 </nav>
