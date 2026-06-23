@@ -1,11 +1,4 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home-component/home-component';
-import { AboutComponent } from './pages/about/about-component/about-component';
-import { FaqComponent } from './pages/faq/faq-component/faq-component';
-import { ContactusComponent } from './pages/contactUs/contactus-component/contactus-component';
-import { ServicesComponent } from './pages/services/services-component/services-component';
-import { DevelopmentComponent } from './pages/services/sub-services/development-component/development.component';
-import { AiWebToolsComponent } from './pages/services/sub-services/ai-web-tools/ai-web-tools-component/ai-web-tools-component';
 
 
 export const routes: Routes = [
@@ -43,6 +36,30 @@ export const routes: Routes = [
     path: 'contact',
     loadComponent: () =>
       import('./pages/contactUs/contactus-component/contactus-component').then(m => m.ContactusComponent)
+  },
+  {
+    path: 'technology',
+    loadComponent: () =>
+      import('./pages/technology/technology-component/technology-component')
+        .then(m => m.TechnologyComponent),
+  },
+  {
+        path: 'dotnet',
+        loadComponent: () =>
+          import('./pages/technology/sub-tecnologies/dotnet-component/dotnet-component')
+            .then(m => m.DotnetComponent)
+  },
+  {
+    path: 'cloud-engineering',
+    loadComponent: () =>
+      import('./pages/technology/sub-tecnologies/cloud-engineeringComponent/cloud-engineering-component')
+        .then(m => m.CloudEngineeringComponent)
+  },
+  {
+    path: 'security-engineering',
+    loadComponent: () =>
+      import('./pages/technology/sub-tecnologies/security-engineering-component/security-engineering-component')
+        .then(m => m.SecurityEngineeringComponent)
   },
   {
     path: '**',
