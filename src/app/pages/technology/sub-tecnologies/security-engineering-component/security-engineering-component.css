@@ -1,0 +1,440 @@
+/* =========================================================
+   Security Engineering Page Fix
+   Scoped CSS - Add this at the END of style.css
+========================================================= */
+
+.security-page {
+    --primary: #000000;
+    --secondary: #0058be;
+    --surface: #f8f9ff;
+    --surface-container: #e5eeff;
+    --surface-container-low: #eff4ff;
+    --on-surface: #0b1c30;
+    --on-surface-variant: #45464d;
+    --primary-container: #131b2e;
+    --on-primary: #ffffff;
+    --outline: #76777d;
+    --outline-variant: #c6c6cd;
+    --tertiary-container: #191c1e;
+
+    font-family: 'Inter', sans-serif;
+    color: var(--on-surface);
+    background-color: var(--surface);
+    overflow-x: hidden;
+}
+
+.security-page h1,
+.security-page h2,
+.security-page h3,
+.security-page h4,
+.security-page .font-display {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.security-page p {
+    color: var(--on-surface-variant);
+    line-height: 1.7;
+}
+
+.security-page section {
+    padding: 110px 0;
+}
+
+/* Hero Section */
+.security-page .security-hero {
+    position: relative;
+    padding: 130px 0 90px;
+    background-color: var(--surface);
+    overflow: hidden;
+}
+
+.security-page .security-hero h1 {
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    line-height: 0.98;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.security-page .security-hero p {
+    max-width: 560px;
+    font-size: 1.05rem;
+}
+
+.security-page .font-label-mono {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+
+/* Hero Visual */
+.security-page .hero-visual {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: min(420px, 36vw);
+    opacity: 0.18;
+    pointer-events: none;
+}
+
+.security-page .circle-spin {
+    border: 2px dashed var(--primary);
+    border-radius: 50%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    animation: securitySpin 22s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.security-page .inner-spin {
+    border: 1px solid var(--secondary);
+    border-radius: 50%;
+    width: 75%;
+    aspect-ratio: 1 / 1;
+    animation: securitySpin 16s linear infinite reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.security-page .core-dot {
+    border: 2px dotted var(--primary);
+    border-radius: 50%;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+@keyframes securitySpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Buttons */
+.security-page .btn-primary-custom {
+    background-color: var(--primary);
+    color: #ffffff;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.security-page .btn-primary-custom:hover {
+    background-color: var(--secondary);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.security-page .btn-outline-custom {
+    border: 2px solid var(--outline);
+    color: var(--primary);
+    padding: calc(1rem - 2px) 2rem;
+    font-weight: 700;
+    border-radius: 4px;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.security-page .btn-outline-custom:hover {
+    background-color: var(--surface-container);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* Grid Pattern */
+.security-page .grid-pattern {
+    background-image: radial-gradient(#cbd5e1 0.5px, transparent 0.5px);
+    background-size: 24px 24px;
+}
+
+/* Pillars Section */
+.security-page .pillars-section {
+    background-color: var(--primary-container);
+    color: #ffffff;
+}
+
+.security-page .pillars-section h2 {
+    color: #ffffff;
+}
+
+.security-page .pillars-section .section-line {
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary);
+    margin-top: 1.5rem;
+}
+
+.security-page .pillar-card {
+    background-color: rgba(19, 27, 46, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 2.5rem;
+    height: 100%;
+    min-height: 330px;
+    transition: all 0.3s ease;
+}
+
+.security-page .pillar-card:hover {
+    border-color: var(--secondary);
+    transform: translateY(-5px);
+}
+
+.security-page .pillar-card h3 {
+    color: #ffffff;
+    font-size: 1.45rem;
+    margin-bottom: 1rem;
+}
+
+.security-page .pillar-card p {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.95rem;
+}
+
+.security-page .pillar-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+}
+
+.security-page .pillar-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 0.65rem;
+}
+
+.security-page .pillar-dot {
+    width: 5px;
+    height: 5px;
+    background: var(--secondary);
+    border-radius: 50%;
+    flex: 0 0 auto;
+}
+
+/* Delivery Cycle */
+.security-page .delivery-section {
+    background-color: #ffffff;
+}
+
+.security-page .delivery-section h2 {
+    font-size: clamp(2rem, 4vw, 3.4rem);
+}
+
+.security-page .delivery-line {
+    height: 1px;
+    background-color: var(--outline-variant);
+    margin: 3rem 0;
+}
+
+.security-page .step-box {
+    width: 96px;
+    height: 96px;
+    background-color: var(--surface-container-low);
+    border: 1px solid var(--outline-variant);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.security-page .step-number {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: var(--outline-variant);
+    opacity: 0.45;
+    position: absolute;
+    top: -18px;
+    left: -16px;
+}
+
+.security-page .check-item {
+    border: 1px solid rgba(198, 198, 205, 0.5);
+    padding: 1rem;
+    transition: all 0.2s ease;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+}
+
+.security-page .check-item:hover {
+    background-color: var(--surface);
+    border-color: var(--secondary);
+}
+
+/* Contact / Start Building Section */
+.security-page .security-contact {
+    background-color: var(--surface-container-low);
+    border-top: 1px solid var(--outline-variant);
+}
+
+.security-page .form-box,
+.security-page .security-form-box {
+    background-color: #ffffff;
+    border: 1px solid var(--outline-variant);
+    padding: 2.5rem;
+    border-radius: 4px;
+    box-shadow: 0 20px 60px rgba(11, 28, 48, 0.06);
+}
+
+/* Override global form styles only inside security page */
+.security-page .form-control,
+.security-page .form-select,
+.security-page textarea {
+    background-color: var(--surface);
+    border: 1px solid transparent;
+    padding: 1rem;
+    border-radius: 4px;
+    color: var(--on-surface);
+    font-size: 0.95rem;
+}
+
+.security-page textarea.form-control {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.security-page .form-control:focus,
+.security-page .form-select:focus {
+    box-shadow: 0 0 0 2px var(--secondary);
+    background-color: var(--surface);
+    border-color: transparent;
+    outline: none;
+}
+
+/* Footer Fix */
+.security-page footer,
+.security-page .security-footer {
+    background-color: var(--tertiary-container);
+    color: #ffffff;
+    padding: 80px 0 40px;
+}
+
+.security-page footer p,
+.security-page .security-footer p {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.security-page footer a,
+.security-page .security-footer a {
+    color: rgba(255, 255, 255, 0.72);
+    text-decoration: none;
+}
+
+.security-page footer a:hover,
+.security-page .security-footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Material Icons */
+.security-page .material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+    vertical-align: middle;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1199.98px) {
+    .security-page section {
+        padding: 90px 0;
+    }
+
+    .security-page .security-hero {
+        padding: 110px 0 80px;
+    }
+
+    .security-page .hero-visual {
+        right: 2%;
+        width: 34vw;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .security-page .security-hero {
+        padding: 100px 0 70px;
+    }
+
+    .security-page .hero-visual {
+        opacity: 0.08;
+        width: 55vw;
+        right: -15%;
+    }
+
+    .security-page .pillar-card {
+        min-height: auto;
+    }
+
+    .security-page .delivery-line {
+        display: none;
+    }
+
+    .security-page .step-box {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .security-page section {
+        padding: 70px 0;
+    }
+
+    .security-page .security-hero {
+        padding: 90px 0 60px;
+    }
+
+    .security-page .security-hero h1 {
+        font-size: clamp(2.4rem, 12vw, 4rem);
+    }
+
+    .security-page .security-hero p {
+        font-size: 1rem;
+    }
+
+    .security-page .hero-visual {
+        display: none;
+    }
+
+    .security-page .btn-primary-custom,
+    .security-page .btn-outline-custom {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 0.75rem;
+    }
+
+    .security-page .pillar-card,
+    .security-page .form-box,
+    .security-page .security-form-box {
+        padding: 1.5rem;
+    }
+
+    .security-page footer,
+    .security-page .security-footer {
+        padding: 50px 0 25px;
+    }
+}
