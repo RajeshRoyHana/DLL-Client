@@ -74,6 +74,12 @@ export const routes: Routes = [
         .then(m => m.DevopsComponent)
   },
   {
+    path: 'technology/frontend-development',
+    loadComponent: () =>
+      import('./pages/technology/sub-tecnologies/frontend-development-component/frontend-development-component')
+        .then(m => m.FrontendDevelopmentComponent)
+  },
+  {
     path: '**',
     redirectTo: '',
     pathMatch: 'full'

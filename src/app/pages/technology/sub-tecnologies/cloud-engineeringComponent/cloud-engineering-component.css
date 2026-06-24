@@ -1,6 +1,6 @@
 body {
   background: #f5f6fb;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #111;
 }
 
@@ -16,7 +16,7 @@ body {
 .hero-label {
   font-size: 9px;
   letter-spacing: 2px;
-  color: #3366d6;
+  color: #111;
   font-weight: 600;
 }
 
@@ -37,14 +37,16 @@ body {
   margin-bottom: 40px;
 }
 
-.custom-btn,
-.custom-btn-light {
-  height: 50px;
-  padding: 0 28px;
+.btn {
   border-radius: 0;
   font-size: 11px;
-  font-weight: 700;
   letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.custom-btn,
+.custom-btn-light {
+  padding: 14px 28px;
 }
 
 .hero-image-box {
@@ -82,7 +84,7 @@ body {
 /* PILLARS */
 .pillar-section {
   background: #fff;
-  padding: 110px 0;
+  padding: 80px 0;
 }
 
 .section-title {
@@ -95,24 +97,24 @@ body {
 .section-line {
   width: 70px;
   height: 3px;
-  background: #2457d6;
+  background: #111;
   margin-top: 16px;
 }
 
 .pillar-card {
-  background: #edf2ff;
-  border: 1px solid #d8dff1;
+  background: #f5f5f5;
+  border: 1px solid #d6d6d6;
   padding: 34px;
   min-height: 100%;
   transition: 0.3s;
 }
 
 .pillar-card:hover {
-  border-color: #2457d6;
+  border-color: #000;
 }
 
 .pillar-icon {
-  color: #2457d6;
+  color: #111;
   font-size: 28px;
   margin-bottom: 28px;
 }
@@ -133,7 +135,7 @@ body {
 }
 
 .pillar-card ul {
-  border-top: 1px solid #d4d9e8;
+  border-top: 1px solid #d6d6d6;
   padding-top: 18px;
   margin: 0;
   padding-left: 18px;
@@ -148,13 +150,13 @@ body {
 /* DELIVERY */
 .delivery-section {
   background: #fff;
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .delivery-label {
   font-size: 9px;
   letter-spacing: 3px;
-  color: #3366d6;
+  color: #111;
   margin-bottom: 10px;
 }
 
@@ -172,7 +174,7 @@ body {
 }
 
 .active-row {
-  border-color: #2457d6;
+  border-color: #000;
 }
 
 .step-info h4 {
@@ -212,8 +214,8 @@ body {
 
 /* CONTACT */
 .contact-section {
-  background: #e9eefc;
-  padding: 110px 0;
+  background: #f0f0f0;
+  padding: 80px 0;
 }
 
 .contact-title {
@@ -256,7 +258,7 @@ body {
 .form-select {
   border-radius: 0;
   border: none;
-  background: #eef1f7;
+  background: #ebebeb;
   min-height: 50px;
   padding: 14px;
   font-size: 13px;
@@ -274,11 +276,7 @@ textarea.form-control {
 
 .submit-btn {
   width: 100%;
-  height: 52px;
-  border-radius: 0;
-  font-size: 11px;
-  letter-spacing: 1px;
-  font-weight: 700;
+  padding: 14px 28px;
 }
 
 /* FOOTER */
@@ -328,12 +326,11 @@ textarea.form-control {
 
 @media (max-width: 767px) {
 
-  .cloud-hero,
   .pillar-section,
   .delivery-section,
   .contact-section,
   .footer-section {
-    padding: 70px 0;
+    padding: 60px 0;
   }
 
   .hero-title,

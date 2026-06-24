@@ -1,0 +1,427 @@
+body {
+  background: #f3f4f8;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #000;
+}
+
+/* COMMON */
+.container {
+  max-width: 1180px;
+}
+
+section {
+  overflow: hidden;
+}
+
+.btn {
+  border-radius: 0;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.custom-btn,
+.custom-btn-light {
+  padding: 14px 28px;
+}
+
+/* HERO */
+.hero-section {
+  padding: 90px 0;
+  border-top: 1px solid #d8d8d8;
+}
+
+.hero-tag {
+  display: inline-block;
+  background: #dfe8ff;
+  color: #4d6ca8;
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+.hero-title {
+  font-size: 72px;
+  line-height: 0.95;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.hero-title span {
+  color: #181717;
+}
+
+.hero-text {
+  color: #666;
+  line-height: 1.8;
+  max-width: 560px;
+  font-size: 16px;
+}
+
+.hero-image-wrapper {
+  max-width: 420px;
+  margin-left: auto;
+}
+
+.hero-image {
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid #111;
+}
+
+/* OVERVIEW */
+.overview-section {
+  padding: 100px 0;
+}
+
+.overview-title {
+  font-size: 52px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.text-accent {
+  color: #1648c7;
+}
+
+.overview-text {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 560px;
+}
+
+/* TECH STACK */
+.techstack-section {
+  background: #f0f4ff;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 0;
+}
+
+.techstack-card {
+  padding: 50px;
+  border-right: 1px solid #d0d8ee;
+  background: #fff;
+}
+
+.techstack-card:last-child {
+  border-right: none;
+}
+
+.techstack-label {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #1648c7;
+  font-weight: 700;
+}
+
+.techstack-arrow {
+  font-size: 22px;
+  color: #1648c7;
+}
+
+.techstack-title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.techstack-text {
+  color: #555;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.tech-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid #c8d4ee;
+  background: #edf2ff;
+  color: #1648c7;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+/* ENGINEERING */
+.engineering-section {
+  background: #08142f;
+  padding: 110px 0;
+  color: white;
+}
+
+.engineering-label {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.engineering-title {
+  font-size: 56px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.engineering-text {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+}
+
+.engineering-grid {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.engineering-card {
+  padding: 40px;
+  min-height: 280px;
+}
+
+.engineering-card small {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.engineering-card h4 {
+  margin: 22px 0;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.engineering-card p {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* STACK */
+.stack-section {
+  background: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 28px 0;
+}
+
+.stack-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #999;
+}
+
+.stack-items {
+  justify-content: flex-end;
+}
+
+.stack-item {
+  font-size: 13px;
+  color: #444;
+}
+
+.stack-item span {
+  background: #111;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 6px;
+  margin-right: 6px;
+}
+
+/* DELIVERY */
+.delivery-section {
+  padding: 120px 0;
+}
+
+.delivery-title {
+  font-size: 58px;
+  font-weight: 700;
+}
+
+.delivery-subtitle {
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #777;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.delivery-card {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 35px;
+  position: relative;
+  min-height: 360px;
+}
+
+.delivery-number {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 70px;
+  font-weight: 700;
+  color: #dfe6fa;
+}
+
+.delivery-card h4 {
+  font-size: 34px;
+  margin-bottom: 18px;
+}
+
+.delivery-card p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.delivery-card ul {
+  padding-left: 18px;
+}
+
+.delivery-card li {
+  font-size: 11px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* CONTACT */
+.contact-section {
+  padding: 110px 0;
+  border-top: 1px solid #ddd;
+}
+
+.contact-title {
+  font-size: 72px;
+  line-height: 0.95;
+  font-weight: 700;
+}
+
+.contact-text {
+  color: #666;
+  line-height: 1.8;
+  max-width: 420px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.icon-box {
+  width: 42px;
+  height: 42px;
+  background: #dfe8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-item small {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #888;
+}
+
+.contact-item p {
+  margin: 5px 0 0;
+  font-weight: 500;
+}
+
+/* FORM */
+.form-box {
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 40px;
+}
+
+.form-box label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.form-control,
+.form-select {
+  border: none;
+  border-radius: 0;
+  background: #eceef3;
+  padding: 14px;
+  min-height: 52px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border: 1px solid #000;
+}
+
+.submit-btn {
+  padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .hero-title,
+  .contact-title,
+  .delivery-title {
+    font-size: 48px;
+  }
+
+  .engineering-title,
+  .overview-title {
+    font-size: 40px;
+  }
+
+  .engineering-card h4,
+  .techstack-title {
+    font-size: 28px;
+  }
+
+  .hero-image-wrapper {
+    margin: auto;
+  }
+
+  .stack-items {
+    justify-content: start;
+    margin-top: 20px;
+  }
+
+  .techstack-card {
+    border-right: none;
+    border-bottom: 1px solid #d0d8ee;
+    padding: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-title,
+  .contact-title,
+  .delivery-title {
+    font-size: 38px;
+  }
+
+  .engineering-title,
+  .overview-title {
+    font-size: 32px;
+  }
+
+  .hero-section,
+  .overview-section,
+  .engineering-section,
+  .delivery-section,
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .engineering-card,
+  .delivery-card,
+  .form-box,
+  .techstack-card {
+    padding: 24px;
+  }
+}
