@@ -44,31 +44,31 @@ export const routes: Routes = [
         .then(m => m.TechnologyComponent),
   },
   {
-        path: 'dotnet',
-        loadComponent: () =>
-          import('./pages/technology/sub-tecnologies/dotnet-component/dotnet-component')
-            .then(m => m.DotnetComponent)
+    path: 'technology/dotnet',
+    loadComponent: () =>
+      import('./pages/technology/sub-tecnologies/dotnet-component/dotnet-component')
+        .then(m => m.DotnetComponent)
   },
   {
-    path: 'cloud-engineering',
+    path: 'technology/cloud-engineering',
     loadComponent: () =>
       import('./pages/technology/sub-tecnologies/cloud-engineeringComponent/cloud-engineering-component')
         .then(m => m.CloudEngineeringComponent)
   },
   {
-    path: 'security-engineering',
+    path: 'technology/security-engineering',
     loadComponent: () =>
       import('./pages/technology/sub-tecnologies/security-engineering-component/security-engineering-component')
         .then(m => m.SecurityEngineeringComponent)
   },
   {
-    path: 'database-engineering',
+    path: 'technology/database-engineering',
     loadComponent: () =>
       import('./pages/technology/sub-tecnologies/database-component/database-component')
         .then(m => m.DatabaseComponent)
   },
-    {
-    path: 'devops-engineering',
+  {
+    path: 'technology/devops-engineering',
     loadComponent: () =>
       import('./pages/technology/sub-tecnologies/devops-component/devops-component')
         .then(m => m.DevopsComponent)

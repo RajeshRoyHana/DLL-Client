@@ -1,15 +1,15 @@
 
 <main>
   <!-- Hero Section -->
-  <section class="bg-surface border-bottom py-5 py-lg-5 hero-section">
+  <section class="bg-light border-bottom hero-section">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <span class="font-label-mono text-primary mb-3 d-block">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="small text-uppercase fw-bold ls-wide text-dark mb-3 d-block">
             Service Engineering / Databases
           </span>
 
-          <h1 class="font-display mb-4 display-3">
+          <h1 class="mb-4 display-3 fw-bold">
             MSSQL Database <br />
             Management
           </h1>
@@ -21,13 +21,21 @@
           </p>
 
           <div class="d-flex flex-wrap gap-3">
-            <button class="btn btn-primary-custom px-4 py-3 fw-bold">
+            <button class="btn btn-dark px-4 py-3 fw-bold">
               Schedule Infrastructure Audit
             </button>
-            <button class="btn btn-outline-custom px-4 py-3 fw-bold">
+            <button class="btn btn-outline-dark px-4 py-3 fw-bold">
               View Technical Docs
             </button>
           </div>
+        </div>
+
+        <div class="col-lg-5">
+          <img
+            src="/images/server.webp"
+            alt="Database Server Infrastructure"
+            class="hero-image"
+          />
         </div>
       </div>
     </div>
@@ -37,30 +45,30 @@
   <section class="section-gap bg-white">
     <div class="container">
       <div class="mb-5">
-        <h2 class="font-headline display-6 mb-3">Core Pillars</h2>
+        <h2 class="display-6 mb-3 fw-semibold">Core Pillars</h2>
         <div class="section-line"></div>
       </div>
 
       <div class="row g-4">
         <!-- Pillar 1 -->
         <div class="col-md-6">
-          <div class="pillar-card group">
+          <div class="pillar-card">
             <div class="d-flex justify-content-between mb-5">
-              <span class="material-symbols-outlined fs-1 text-dark">speed</span>
-              <span class="font-label-mono text-muted">PILLAR_01</span>
+              <span class="fw-bold text-dark small ls-wide">PERFORMANCE</span>
+              <span class="small ls-wide text-muted">PILLAR_01</span>
             </div>
 
-            <h3 class="font-headline h3 mb-3">Performance Tuning</h3>
+            <h3 class="h3 mb-3 fw-semibold">Performance Tuning</h3>
             <p class="text-muted mb-4">
               Deep index analysis, execution plan optimization, and memory
               pressure resolution for high-load systems.
             </p>
 
             <div class="d-flex gap-2">
-              <span class="badge bg-light text-dark font-label-mono p-2">
+              <span class="badge bg-light text-dark ls-wide p-2">
                 QUERY_OPT
               </span>
-              <span class="badge bg-light text-dark font-label-mono p-2">
+              <span class="badge bg-light text-dark ls-wide p-2">
                 INDEXING
               </span>
             </div>
@@ -71,13 +79,11 @@
         <div class="col-md-6">
           <div class="pillar-card">
             <div class="d-flex justify-content-between mb-5">
-              <span class="material-symbols-outlined fs-1 text-dark">
-                sync_alt
-              </span>
-              <span class="font-label-mono text-muted">PILLAR_02</span>
+              <span class="fw-bold text-dark small ls-wide">HA</span>
+              <span class="small ls-wide text-muted">PILLAR_02</span>
             </div>
 
-            <h3 class="font-headline h3 mb-3">
+            <h3 class="h3 mb-3 fw-semibold">
               High Availability (AlwaysOn)
             </h3>
             <p class="text-muted mb-4">
@@ -86,10 +92,10 @@
             </p>
 
             <div class="d-flex gap-2">
-              <span class="badge bg-light text-dark font-label-mono p-2">
+              <span class="badge bg-light text-dark ls-wide p-2">
                 CLUSTERING
               </span>
-              <span class="badge bg-light text-dark font-label-mono p-2">
+              <span class="badge bg-light text-dark ls-wide p-2">
                 DR_STRATEGY
               </span>
             </div>
@@ -102,13 +108,11 @@
             <div class="row g-4 align-items-center">
               <div class="col-md-6">
                 <div class="d-flex justify-content-between mb-5">
-                  <span class="material-symbols-outlined fs-1 text-dark">
-                    database
-                  </span>
-                  <span class="font-label-mono text-muted">PILLAR_03</span>
+                  <span class="fw-bold text-dark small ls-wide">DW</span>
+                  <span class="small ls-wide text-muted">PILLAR_03</span>
                 </div>
 
-                <h3 class="font-headline h3 mb-3">Data Warehousing</h3>
+                <h3 class="h3 mb-3 fw-semibold">Data Warehousing</h3>
                 <p class="text-muted mb-0">
                   ETL/ELT pipeline construction and PolyBase integration for
                   petabyte-scale analytical workloads.
@@ -126,26 +130,23 @@
         <div class="col-lg-5">
           <div class="pillar-card bg-dark text-white border-0">
             <div class="d-flex justify-content-between mb-5">
-              <span class="material-symbols-outlined fs-1 text-white">
-                admin_panel_settings
-              </span>
-              <span class="font-label-mono text-secondary-fixed-dim">
+              <span class="fw-bold text-white small ls-wide">SEC</span>
+              <span class="small ls-wide text-white-50">
                 PILLAR_04
               </span>
             </div>
 
-            <h3 class="font-headline h3 mb-3">SQL Server Security</h3>
+            <h3 class="h3 mb-3 fw-semibold">SQL Server Security</h3>
             <p class="text-white-50 mb-4">
               Transparent Data Encryption (TDE), dynamic data masking, and
               row-level security hardening.
             </p>
 
             <a
-              class="text-decoration-none text-info font-label-mono d-flex align-items-center gap-2"
+              class="text-decoration-none text-white-50 ls-wide d-flex align-items-center gap-2"
               href="#"
             >
-              COMPLIANCE AUDIT
-              <span class="material-symbols-outlined fs-6">arrow_forward</span>
+              COMPLIANCE AUDIT &rarr;
             </a>
           </div>
         </div>
@@ -157,10 +158,10 @@
   <section class="section-gap bg-white border-top border-bottom">
     <div class="container">
       <div class="text-center mb-5">
-        <span class="font-label-mono text-primary mb-2 d-block">
+        <span class="small text-uppercase fw-bold text-dark ls-wide mb-2 d-block">
           METHODOLOGY
         </span>
-        <h2 class="font-headline display-5">The Delivery Cycle</h2>
+        <h2 class="display-5 fw-semibold">The Delivery Cycle</h2>
       </div>
 
       <!-- Step 1 -->
@@ -168,7 +169,7 @@
         <div class="col-md-4 mb-4">
           <div class="d-flex align-items-center gap-3 mb-3">
             <div class="delivery-step-num">01</div>
-            <h3 class="font-headline mb-0">Plan</h3>
+            <h3 class="mb-0 fw-semibold">Plan</h3>
           </div>
           <p class="text-muted">
             Defining technical constraints, capacity planning, and architectural
@@ -178,15 +179,13 @@
 
         <div class="col-md-8">
           <div class="bg-light p-4 p-lg-5 hard-border">
-            <h4 class="font-label-mono text-primary border-bottom pb-2 mb-4">
+            <h4 class="small fw-bold text-dark ls-wide border-bottom pb-2 mb-4">
               TECHNICAL CHECKLIST
             </h4>
 
             <div class="vstack gap-4">
               <div class="d-flex gap-3 pb-3 border-bottom">
-                <span class="material-symbols-outlined text-primary">
-                  check_circle
-                </span>
+                <span class="fw-bold text-dark">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">Workload Profile Analysis</p>
                   <p class="small text-muted mb-0">
@@ -197,9 +196,7 @@
               </div>
 
               <div class="d-flex gap-3 pb-3 border-bottom">
-                <span class="material-symbols-outlined text-primary">
-                  check_circle
-                </span>
+                <span class="fw-bold text-dark">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">RPO/RTO Definition</p>
                   <p class="small text-muted mb-0">
@@ -210,9 +207,7 @@
               </div>
 
               <div class="d-flex gap-3">
-                <span class="material-symbols-outlined text-primary">
-                  check_circle
-                </span>
+                <span class="fw-bold text-dark">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">Hardware Sizing (Core-to-RAM Ratio)</p>
                   <p class="small text-muted mb-0">
@@ -231,7 +226,7 @@
         <div class="col-md-4 mb-4">
           <div class="d-flex align-items-center gap-3 mb-3">
             <div class="delivery-step-num">02</div>
-            <h3 class="font-headline mb-0">Build</h3>
+            <h3 class="mb-0 fw-semibold">Build</h3>
           </div>
           <p class="text-muted">
             Implementation of high-availability clusters and secure database
@@ -241,15 +236,13 @@
 
         <div class="col-md-8">
           <div class="bg-light p-4 p-lg-5 hard-border">
-            <h4 class="font-label-mono text-primary border-bottom pb-2 mb-4">
+            <h4 class="small fw-bold text-dark ls-wide border-bottom pb-2 mb-4">
               TECHNICAL CHECKLIST
             </h4>
 
             <div class="vstack gap-4">
               <div class="d-flex gap-3 pb-3 border-bottom">
-                <span class="material-symbols-outlined text-primary">
-                  check_circle
-                </span>
+                <span class="fw-bold text-dark">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">Instance Level Hardening</p>
                   <p class="small text-muted mb-0">
@@ -260,9 +253,7 @@
               </div>
 
               <div class="d-flex gap-3 pb-3 border-bottom">
-                <span class="material-symbols-outlined text-primary">
-                  check_circle
-                </span>
+                <span class="fw-bold text-dark">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">HA/DR Deployment</p>
                   <p class="small text-muted mb-0">
@@ -273,9 +264,7 @@
               </div>
 
               <div class="d-flex gap-3">
-                <span class="material-symbols-outlined text-primary">
-                  check_circle
-                </span>
+                <span class="fw-bold text-dark">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">Automation Scripting</p>
                   <p class="small text-muted mb-0">
@@ -294,7 +283,7 @@
         <div class="col-md-4 mb-4">
           <div class="d-flex align-items-center gap-3 mb-3">
             <div class="delivery-step-num">03</div>
-            <h3 class="font-headline mb-0">Launch</h3>
+            <h3 class="mb-0 fw-semibold">Launch</h3>
           </div>
           <p class="text-muted">
             Final migration, performance verification, and handover to
@@ -304,15 +293,13 @@
 
         <div class="col-md-8">
           <div class="bg-light p-4 p-lg-5 hard-border">
-            <h4 class="font-label-mono text-primary border-bottom pb-2 mb-4">
+            <h4 class="small fw-bold text-dark ls-wide border-bottom pb-2 mb-4">
               TECHNICAL CHECKLIST
             </h4>
 
             <div class="vstack gap-4">
               <div class="d-flex gap-3 pb-3 border-bottom">
-                <span class="material-symbols-outlined text-primary">
-                  check_circle
-                </span>
+                <span class="fw-bold text-dark">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">Performance Baseline Validation</p>
                   <p class="small text-muted mb-0">
@@ -323,9 +310,7 @@
               </div>
 
               <div class="d-flex gap-3 pb-3 border-bottom">
-                <span class="material-symbols-outlined text-primary">
-                  check_circle
-                </span>
+                <span class="fw-bold text-dark">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">Backup Chain Verification</p>
                   <p class="small text-muted mb-0">
@@ -336,9 +321,7 @@
               </div>
 
               <div class="d-flex gap-3">
-                <span class="material-symbols-outlined text-primary">
-                  check_circle
-                </span>
+                <span class="fw-bold text-dark">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">24/7 Monitoring Handover</p>
                   <p class="small text-muted mb-0">
@@ -360,7 +343,7 @@
       <div class="contact-card">
         <div class="row g-5 align-items-start">
           <div class="col-lg-5 text-white">
-            <h2 class="font-headline display-5 mb-4">Start Building</h2>
+            <h2 class="display-5 mb-4 fw-semibold">Start Building</h2>
 
             <p class="text-white-50 mb-5 fs-5">
               Consult with our lead database engineers to architect your next
@@ -369,13 +352,11 @@
 
             <div class="vstack gap-4">
               <div class="d-flex align-items-center gap-3">
-                <span class="material-symbols-outlined text-info">mail</span>
-                <span class="font-label-mono">engineering@dhakalogic.com</span>
+                <span class="ls-wide">engineering@dhakalogic.com</span>
               </div>
 
               <div class="d-flex align-items-center gap-3">
-                <span class="material-symbols-outlined text-info">terminal</span>
-                <span class="font-label-mono">SSH: gateway.dhakalogic.com</span>
+                <span class="ls-wide">SSH: gateway.dhakalogic.com</span>
               </div>
             </div>
           </div>
@@ -385,7 +366,7 @@
               <form>
                 <div class="row g-3 mb-4">
                   <div class="col-md-6">
-                    <label class="font-label-mono small text-muted mb-2">
+                    <label class="small text-muted ls-wide mb-2">
                       NAME
                     </label>
                     <input
@@ -396,7 +377,7 @@
                   </div>
 
                   <div class="col-md-6">
-                    <label class="font-label-mono small text-muted mb-2">
+                    <label class="small text-muted ls-wide mb-2">
                       BUSINESS EMAIL
                     </label>
                     <input
@@ -408,7 +389,7 @@
                 </div>
 
                 <div class="mb-4">
-                  <label class="font-label-mono small text-muted mb-2">
+                  <label class="small text-muted ls-wide mb-2">
                     SERVICE OF INTEREST
                   </label>
                   <select class="form-select form-control-custom">
@@ -420,7 +401,7 @@
                 </div>
 
                 <div class="mb-4">
-                  <label class="font-label-mono small text-muted mb-2">
+                  <label class="small text-muted ls-wide mb-2">
                     PROJECT SCOPE
                   </label>
                   <textarea
@@ -431,7 +412,7 @@
                 </div>
 
                 <button
-                  class="btn btn-primary-custom w-100 py-4 fw-bold text-uppercase tracking-widest"
+                  class="btn btn-dark w-100 py-4 fw-bold text-uppercase ls-wide"
                   type="submit"
                 >
                   Request Technical Consultation
@@ -444,4 +425,5 @@
     </div>
   </section>
 </main>
+
 
