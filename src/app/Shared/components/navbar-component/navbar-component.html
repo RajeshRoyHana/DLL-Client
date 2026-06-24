@@ -35,9 +35,52 @@
             </ul>
           </div>
         </li>
+        <li class="nav-item dropdown">
+          <div class="d-flex align-items-center">
+            <a class="nav-link pe-1" routerLink="/technology">
+              Technology
+            </a>
+            <button class="nav-link dropdown-toggle dropdown-toggle-split" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false" aria-label="Open Technology dropdown menu">
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" routerLink="/technology/dotnet">
+                  .NET Development
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/technology/frontend-development">
+                  Frontend Development
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/technology/cloud-engineering">
+                  Cloud Engineering
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/technology/devops-engineering">
+                  DevOps Engineering
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/technology/database-engineering">
+                  Database Engineering
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/technology/security-engineering">
+                  Security Engineering
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
         <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/industries">Industry</a></li>
         <li class="nav-item"><a class="nav-link" routerLink="/faq">FAQ</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
       </ul>
       <button class="btn btn-dark mt-3 mt-lg-0" [class.contact-page-btn]="isContactPage">Get Started</button>
     </div>

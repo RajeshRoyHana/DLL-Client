@@ -2,6 +2,9 @@
 :host {
   display: block;
   overflow-x: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #000;
+  background: #f3f4f8;
 }
 
 .ls-wide {

@@ -79,6 +79,13 @@ export const routes: Routes = [
       import('./pages/technology/sub-tecnologies/frontend-development-component/frontend-development-component')
         .then(m => m.FrontendDevelopmentComponent)
   },
+
+  {
+    path: 'industries',
+    loadComponent: () =>
+      import('./pages/industries/bike-manufacturing-erp-component/bike-manufacturing-erp-component')
+        .then(m => m.BikeManufacturingErpComponent)
+  },
   {
     path: '**',
     redirectTo: '',

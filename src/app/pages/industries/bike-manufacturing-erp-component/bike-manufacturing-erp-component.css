@@ -1,0 +1,150 @@
+:host {
+  display: block;
+  overflow-x: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #000;
+  background: #f3f4f8;
+}
+
+/* ── Typography helpers ── */
+.ls-wide {
+  letter-spacing: 0.08em;
+}
+
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero-text {
+  max-width: 620px;
+}
+
+/* ── Hero stats panel ── */
+.stats-panel {
+  z-index: 10;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.stat-value {
+  font-size: 0.65rem;
+  color: #888;
+}
+
+/* ── Challenge pillar cards ── */
+.pillar-card {
+  background: #ffffff;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s;
+  height: 100%;
+}
+
+.pillar-card:hover {
+  border-color: #000;
+}
+
+.pillar-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f8;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #000;
+}
+
+.small-list {
+  font-size: 0.75rem;
+}
+
+/* ── Module cards ── */
+.module-card {
+  background: #ffffff;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s;
+  height: 100%;
+}
+
+.module-card:hover {
+  border-color: #000;
+}
+
+.module-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f8;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ── Implementation steps ── */
+.step-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.delivery-step-card {
+  background: #f9f9f9;
+  padding: 2rem;
+  border: 1px solid #e5e5e5;
+}
+
+.checklist {
+  font-size: 0.85rem;
+}
+
+/* ── Why choose us cards ── */
+.why-card {
+  background: #ffffff;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s;
+  height: 100%;
+}
+
+.why-card:hover {
+  border-color: #000;
+}
+
+.why-card h6 {
+  font-size: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Stats numbers ── */
+.stats-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
