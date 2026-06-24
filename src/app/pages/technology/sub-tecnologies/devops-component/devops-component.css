@@ -1,0 +1,319 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Inter:wght@400;500&family=Geist:wght@400;500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap");
+
+:host {
+  --bs-primary: #000000;
+  --bs-primary-rgb: 0, 0, 0;
+  --bs-secondary: #0058be;
+  --bs-secondary-rgb: 0, 88, 190;
+  --surface: #f8f9ff;
+  --surface-container-low: #eff4ff;
+  --surface-container-lowest: #ffffff;
+  --on-surface: #0b1c30;
+  --on-surface-variant: #45464d;
+  --outline-variant: #c6c6cd;
+  --tertiary-container: #191c1e;
+  --on-tertiary-container: #818486;
+  --on-tertiary-fixed: #191c1e;
+  --section-gap: 120px;
+  --container-max: 1280px;
+
+  display: block;
+  font-family: "Inter", sans-serif;
+  background-color: var(--surface);
+  color: var(--on-surface);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container-custom {
+  max-width: var(--container-max);
+}
+
+.font-display {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-size: 4.5rem;
+}
+
+.font-headline-lg {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  font-size: 3rem;
+}
+
+.font-headline-md {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+  font-size: 2rem;
+}
+
+.font-label-mono {
+  font-family: "Geist", monospace;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+}
+
+.font-body-lg {
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.bg-surface {
+  background-color: var(--surface);
+}
+
+.bg-surface-container-low {
+  background-color: var(--surface-container-low);
+}
+
+.bg-surface-container-lowest {
+  background-color: var(--surface-container-lowest);
+}
+
+.bg-tertiary-container {
+  background-color: var(--tertiary-container);
+}
+
+.text-secondary {
+  color: var(--bs-secondary) !important;
+}
+
+.text-on-surface-variant {
+  color: var(--on-surface-variant) !important;
+}
+
+.text-on-tertiary-container {
+  color: var(--on-tertiary-container) !important;
+}
+
+.text-on-tertiary-fixed {
+  color: var(--on-tertiary-fixed) !important;
+}
+
+.border-outline-variant {
+  border-color: var(--outline-variant) !important;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  background: #ffffff;
+  border-bottom: 1px solid var(--outline-variant);
+}
+
+.nav-link-custom {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--on-surface-variant);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-link-custom:hover {
+  color: var(--bs-primary);
+}
+
+.nav-link-custom.active {
+  color: var(--bs-secondary);
+  font-weight: 700;
+  border-bottom: 2px solid var(--bs-secondary);
+}
+
+.btn-primary-custom {
+  background-color: var(--bs-primary);
+  color: #ffffff;
+  border-radius: 0.125rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.btn-primary-custom:hover {
+  opacity: 0.9;
+  color: #ffffff;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.section-padding {
+  padding-top: var(--section-gap);
+  padding-bottom: var(--section-gap);
+}
+
+.hero-text {
+  max-width: 640px;
+}
+
+.pipeline-card {
+  z-index: 10;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.pipeline-name {
+  font-size: 0.7rem;
+}
+
+.pipeline-status {
+  font-size: 0.65rem;
+}
+
+.hero-texture {
+  top: -40px;
+  right: -40px;
+  width: 250px;
+  height: 250px;
+  pointer-events: none;
+}
+
+.pillar-card {
+  background: #ffffff;
+  padding: 2rem;
+  border: 1px solid var(--outline-variant);
+  transition: border-color 0.3s;
+  height: 100%;
+}
+
+.pillar-card:hover {
+  border-color: var(--bs-secondary) !important;
+}
+
+.small-list {
+  font-size: 0.75rem;
+}
+
+.step-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bs-primary);
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.step-circle.active {
+  background-color: var(--bs-secondary);
+}
+
+.delivery-step-card {
+  background-color: var(--surface);
+  padding: 2rem;
+  border: 1px solid var(--outline-variant);
+  height: 100%;
+}
+
+.progress-line {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--outline-variant);
+  z-index: 0;
+}
+
+.checklist {
+  font-size: 0.75rem;
+}
+
+.visual-spacer {
+  height: 400px;
+}
+
+.visual-bg {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDtrcWNKIf5pczfLTqu8c5dpcvU-S9jK0mIAomry1S7OTWEBFshz6iGNIMRDIfVX4J3HJsXux2rKBgRXLy7srKx1OQTi3SRcBNmPhTv31K7kUQxq0ENA1anbQnFOu_qPYD5nw6Yj9Q0YIxIvnlRzwRQguFnPDG9SIU__gi3Mgr5wSo_6cMzg2-3FWcdNwlBHODrfxSjTj1HTaRJaBC5kQg0MaW6RT17L8RW0aURxVIZl8I9rCTeo098WrKRuLDsiF7SistFeeFw-Ik");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.visual-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.visual-title {
+  letter-spacing: 0.5em;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+}
+
+.form-control-custom {
+  background-color: var(--surface-container-low);
+  border: none;
+  padding: 1rem;
+  border-radius: 0.125rem;
+}
+
+.form-control-custom:focus {
+  box-shadow: 0 0 0 2px var(--bs-secondary);
+  background-color: var(--surface-container-low);
+}
+
+.footer-link {
+  color: var(--on-tertiary-container);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-link:hover {
+  color: var(--on-tertiary-fixed);
+  text-decoration: underline;
+}
+
+.footer-icon-btn {
+  width: 40px;
+  height: 40px;
+  border-color: var(--on-tertiary-container);
+  color: var(--on-tertiary-container);
+}
+
+.newsletter-input {
+  border-color: rgba(129, 132, 134, 0.3) !important;
+}
+
+.footer-line {
+  border-color: rgba(129, 132, 134, 0.2);
+}
+
+.footer-bottom-links {
+  font-size: 0.7rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  vertical-align: middle;
+}
+
+@media (max-width: 991.98px) {
+  .font-display {
+    font-size: 3rem;
+  }
+
+  .font-headline-lg {
+    font-size: 2.25rem;
+  }
+
+  .progress-line {
+    display: none;
+  }
+}

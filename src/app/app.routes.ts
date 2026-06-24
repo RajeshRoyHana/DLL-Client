@@ -62,6 +62,18 @@ export const routes: Routes = [
         .then(m => m.SecurityEngineeringComponent)
   },
   {
+    path: 'database-engineering',
+    loadComponent: () =>
+      import('./pages/technology/sub-tecnologies/database-component/database-component')
+        .then(m => m.DatabaseComponent)
+  },
+    {
+    path: 'devops-engineering',
+    loadComponent: () =>
+      import('./pages/technology/sub-tecnologies/devops-component/devops-component')
+        .then(m => m.DevopsComponent)
+  },
+  {
     path: '**',
     redirectTo: '',
     pathMatch: 'full'
