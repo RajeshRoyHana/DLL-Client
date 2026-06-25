@@ -37,9 +37,12 @@
       <div class="col-lg-5">
         <div class="hero-image-wrapper">
           <img
-            src="/images/code.webp"
+            ngSrc="/images/code.webp"
             class="img-fluid hero-image"
-            alt="Frontend Development">
+            width="1200"
+            height="675"
+            alt="Frontend Development"
+            priority>
         </div>
       </div>
 
@@ -48,81 +51,7 @@
   </div>
 </section>
 
-<!-- OVERVIEW -->
-<!-- <section class="overview-section">
-  <div class="container">
 
-    <div class="row align-items-start">
-
-      <div class="col-lg-5">
-        <h2 class="overview-title">
-          <span class="text-accent">Frontend</span><br>
-          Development
-        </h2>
-      </div>
-
-      <div class="col-lg-7">
-        <p class="overview-text">
-          At Dhaka Logic Ltd., we believe the frontend is where user experiences come to life!
-          Our skilled frontend development team focuses on creating engaging interfaces that
-          captivate and retain users. Discover the key benefits of prioritizing frontend
-          development for your digital solutions!
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section> -->
-
-<!-- TECH STACK DEEP DIVE -->
-<!-- <section class="techstack-section">
-  <div class="container">
-
-    <div class="row g-0">
-
-      <div class="col-lg-6">
-        <div class="techstack-card h-100">
-          <div class="d-flex justify-content-between align-items-start mb-4">
-            <small class="techstack-label">FRAMEWORK EXPERTISE</small>
-            <span class="techstack-arrow">→</span>
-          </div>
-          <h3 class="techstack-title">React Development</h3>
-          <p class="techstack-text">
-            Building scalable, component-driven architectures for complex web applications
-            and real-time dashboards.
-          </p>
-          <div class="d-flex gap-2 flex-wrap mt-4">
-            <span class="tech-badge">REDUX</span>
-            <span class="tech-badge">NEXT.JS</span>
-            <span class="tech-badge">VITE</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="techstack-card h-100">
-          <div class="d-flex justify-content-between align-items-start mb-4">
-            <small class="techstack-label">ENTERPRISE SOLUTIONS</small>
-            <span class="techstack-arrow">→</span>
-          </div>
-          <h3 class="techstack-title">Angular Development</h3>
-          <p class="techstack-text">
-            Engineered for robustness. We leverage Angular's powerful tooling for
-            high-compliance corporate systems.
-          </p>
-          <div class="d-flex gap-2 flex-wrap mt-4">
-            <span class="tech-badge">TYPESCRIPT</span>
-            <span class="tech-badge">RXJS</span>
-            <span class="tech-badge">NX</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section> -->
 
 <!-- ENGINEERING / KEY BENEFITS -->
 <section class="engineering-section">
@@ -262,100 +191,7 @@
 
 </section>
 
-<!-- CONTACT -->
-<section class="contact-section">
-
-  <div class="container">
-
-    <div class="row g-5 align-items-start">
-
-      <div class="col-lg-4">
-
-        <h2 class="contact-title">
-          Start<br>Building
-        </h2>
-
-        <p class="contact-text">
-          Initiate the consultation sequence for your end-to-end frontend
-          development engagement. Our architects are ready to review your requirements.
-        </p>
-
-        <div class="contact-info mt-5">
-
-          <div class="contact-item">
-            <div class="icon-box">✉</div>
-            <div>
-              <small>EMAIL US</small>
-              <p>hello&#64;dhakalogic.com</p>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="icon-box">↗</div>
-            <div>
-              <small>RESPONSE TIME</small>
-              <p>&lt; 24 Engineering Hours</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="col-lg-8">
-
-        <div class="form-box">
-
-          <form>
-
-            <div class="row g-3 mb-3">
-
-              <div class="col-md-6">
-                <label>FULL NAME</label>
-                <input type="text" class="form-control" placeholder="John Doe">
-              </div>
-
-              <div class="col-md-6">
-                <label>WORK EMAIL</label>
-                <input type="email" class="form-control" placeholder="you@company.com">
-              </div>
-
-            </div>
-
-            <div class="mb-3">
-              <label>COMPANY DOMAIN</label>
-              <input type="url" class="form-control" placeholder="https://">
-            </div>
-
-            <div class="mb-3">
-              <label>INQUIRY TYPE</label>
-              <select class="form-select">
-                <option>Frontend Development</option>
-                <option>Full Stack Engineering</option>
-                <option>Technical Consulting</option>
-              </select>
-            </div>
-
-            <div class="mb-4">
-              <label>MESSAGE</label>
-              <textarea
-                rows="5"
-                class="form-control"
-                placeholder="Goals, timeline, key constraints..."></textarea>
-            </div>
-
-            <button class="btn btn-dark w-100 submit-btn" type="submit">
-              SEND INQUIRY
-            </button>
-
-          </form>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+<app-start-building
+  [serviceOptions]="serviceOptions"
+  subtitle="Initiate the consultation sequence for your frontend development engagement. Our architects are ready to review your requirements.">
+</app-start-building>

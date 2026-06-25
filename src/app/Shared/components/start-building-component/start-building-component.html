@@ -1,0 +1,123 @@
+<section class="sb-section">
+  <div class="container">
+    <div class="row g-0 align-items-stretch">
+
+      <!-- LEFT — dark card -->
+      <div class="col-lg-5">
+        <div class="sb-left h-100">
+
+          <p class="sb-eyebrow">INITIATE ENGAGEMENT</p>
+
+          <h2 class="sb-title">
+            Start<br>Building
+          </h2>
+
+          <p class="sb-subtitle">{{ subtitle }}</p>
+
+          <!-- 3-phase process -->
+          <div class="sb-phases">
+
+            <div class="sb-phase">
+              <div class="sb-phase-icon">⌖</div>
+              <div class="sb-phase-body">
+                <h6>Phase 1 — Diagnosis</h6>
+                <p>Deep-dive into your existing stack and bottlenecks.</p>
+              </div>
+            </div>
+
+            <div class="sb-phase">
+              <div class="sb-phase-icon">⌬</div>
+              <div class="sb-phase-body">
+                <h6>Phase 2 — Blueprint</h6>
+                <p>Architectural and delivery planning, costed and time-boxed.</p>
+              </div>
+            </div>
+
+            <div class="sb-phase">
+              <div class="sb-phase-icon">↗</div>
+              <div class="sb-phase-body">
+                <h6>Phase 3 — Deployment</h6>
+                <p>Measured rollout, monitoring setup, and handover.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact info -->
+          <div class="sb-contact-info">
+
+            <div class="sb-contact-item">
+              <div class="sb-contact-icon">✉</div>
+              <div>
+                <div class="sb-contact-label">EMAIL US</div>
+                <div class="sb-contact-value">hello&#64;dhakalogic.com</div>
+              </div>
+            </div>
+
+            <div class="sb-contact-item">
+              <div class="sb-contact-icon">↗</div>
+              <div>
+                <div class="sb-contact-label">RESPONSE TIME</div>
+                <div class="sb-contact-value">&lt; 24 Engineering Hours</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT — form -->
+      <div class="col-lg-7">
+        <div class="sb-form-box h-100">
+
+          <form>
+
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label class="sb-form-label">FULL NAME</label>
+                <input type="text" class="form-control" placeholder="Alan Turing">
+              </div>
+              <div class="col-md-6">
+                <label class="sb-form-label">CORPORATE EMAIL</label>
+                <input type="email" class="form-control" placeholder="name@company.com">
+              </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label class="sb-form-label">PHONE</label>
+                <input type="tel" class="form-control" placeholder="+1 (555) 000-0000">
+              </div>
+              <div class="col-md-6">
+                <label class="sb-form-label">COMPANY URL</label>
+                <input type="url" class="form-control" placeholder="https://">
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label class="sb-form-label">SERVICE OF INTEREST</label>
+              <select class="form-select">
+                @for (option of serviceOptions; track option) {
+                  <option>{{ option }}</option>
+                }
+              </select>
+            </div>
+
+            <div class="mb-4">
+              <label class="sb-form-label">PROJECT SCOPE</label>
+              <textarea class="form-control" rows="5" placeholder="Goals, timeline, key constraints..."></textarea>
+            </div>
+
+            <button class="btn btn-dark sb-submit-btn" type="submit">
+              SEND INQUIRY
+            </button>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

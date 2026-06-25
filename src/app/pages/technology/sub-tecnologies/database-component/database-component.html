@@ -32,9 +32,12 @@
 
         <div class="col-lg-5">
           <img
-            src="/images/server.webp"
+            ngSrc="/images/server.webp"
             alt="Database Server Infrastructure"
             class="hero-image"
+            width="1200"
+            height="675"
+            priority
           />
         </div>
       </div>
@@ -337,93 +340,10 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="section-gap">
-    <div class="container">
-      <div class="contact-card">
-        <div class="row g-5 align-items-start">
-          <div class="col-lg-5 text-white">
-            <h2 class="display-5 mb-4 fw-semibold">Start Building</h2>
-
-            <p class="text-white-50 mb-5 fs-5">
-              Consult with our lead database engineers to architect your next
-              SQL Server environment. No sales pitch, just architecture.
-            </p>
-
-            <div class="vstack gap-4">
-              <div class="d-flex align-items-center gap-3">
-                <span class="ls-wide">engineering@dhakalogic.com</span>
-              </div>
-
-              <div class="d-flex align-items-center gap-3">
-                <span class="ls-wide">SSH: gateway.dhakalogic.com</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="bg-white p-4 p-lg-5">
-              <form>
-                <div class="row g-3 mb-4">
-                  <div class="col-md-6">
-                    <label class="small text-muted ls-wide mb-2">
-                      NAME
-                    </label>
-                    <input
-                      class="form-control form-control-custom"
-                      placeholder="Technical Lead Name"
-                      type="text"
-                    />
-                  </div>
-
-                  <div class="col-md-6">
-                    <label class="small text-muted ls-wide mb-2">
-                      BUSINESS EMAIL
-                    </label>
-                    <input
-                      class="form-control form-control-custom"
-                      placeholder="name@enterprise.com"
-                      type="email"
-                    />
-                  </div>
-                </div>
-
-                <div class="mb-4">
-                  <label class="small text-muted ls-wide mb-2">
-                    SERVICE OF INTEREST
-                  </label>
-                  <select class="form-select form-control-custom">
-                    <option>MSSQL Performance Tuning</option>
-                    <option>High Availability Setup</option>
-                    <option>Data Migration / Cloud Pivot</option>
-                    <option>Managed DBA Services</option>
-                  </select>
-                </div>
-
-                <div class="mb-4">
-                  <label class="small text-muted ls-wide mb-2">
-                    PROJECT SCOPE
-                  </label>
-                  <textarea
-                    class="form-control form-control-custom"
-                    placeholder="Describe your current environment..."
-                    rows="4"
-                  ></textarea>
-                </div>
-
-                <button
-                  class="btn btn-dark w-100 py-4 fw-bold text-uppercase ls-wide"
-                  type="submit"
-                >
-                  Request Technical Consultation
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <app-start-building
+    [serviceOptions]="serviceOptions"
+    subtitle="Consult with our lead database engineers to architect your next SQL Server environment. No sales pitch, just architecture.">
+  </app-start-building>
 </main>
 
 

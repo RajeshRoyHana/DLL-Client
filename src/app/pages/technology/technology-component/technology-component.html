@@ -38,9 +38,12 @@
       <div class="col-lg-7">
         <div class="hero-image-wrapper">
           <img
-            src="/images/services.webp"
+            ngSrc="/images/server.webp"
             class="img-fluid hero-image"
-            alt="Technical Services">
+            width="1200"
+            height="675"
+            alt="Technical Services"
+            priority>
         </div>
       </div>
 
@@ -242,7 +245,7 @@
 
       <div class="col-lg-3 col-md-6">
         <div class="blog-card">
-          <img src="/images/code.webp" class="img-fluid" alt="">
+          <img ngSrc="/images/code.webp" class="img-fluid" width="600" height="400" alt="Custom WordPress Plugin Development" decoding="async">
 
           <h5>
             Custom WordPress Plugin Development for Scale
@@ -252,7 +255,7 @@
 
       <div class="col-lg-3 col-md-6">
         <div class="blog-card">
-          <img src="/images/ai.webp" class="img-fluid" alt="">
+          <img ngSrc="/images/ai.webp" class="img-fluid" width="600" height="400" alt="AI Coding Assistants" decoding="async">
 
           <h5>
             AI Coding Assistants in Production Environments
@@ -262,7 +265,7 @@
 
       <div class="col-lg-3 col-md-6">
         <div class="blog-card">
-          <img src="/images/laptopImg.webp" class="img-fluid" alt="">
+          <img ngSrc="/images/laptopImg.webp" class="img-fluid" width="600" height="400" alt="Digital Infrastructure Development" decoding="async">
 
           <h5>
             The New Era of Digital Infrastructure Development
@@ -272,7 +275,7 @@
 
       <div class="col-lg-3 col-md-6">
         <div class="blog-card">
-          <img src="/images/treeImg.webp" class="img-fluid" alt="">
+          <img ngSrc="/images/treeImg.webp" class="img-fluid" width="600" height="400" alt="AI Co-Pilots for Engineering Teams" decoding="async">
 
           <h5>
             AI Co-Pilots for Productive Engineering Teams
@@ -285,81 +288,4 @@
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="section">
-  <div class="container">
-
-    <div class="row g-5 align-items-start">
-
-      <div class="col-lg-5">
-        <h2 class="section-title mb-4">
-          Start Building
-        </h2>
-
-        <p class="section-text">
-          Initiate the consultation sequence for your end-to-end development engagement.
-          Our team will review your requirements and respond within 24 hours.
-        </p>
-      </div>
-
-      <div class="col-lg-7">
-
-        <div class="form-box">
-
-          <form>
-
-            <div class="row g-3 mb-3">
-
-              <div class="col-md-6">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Full Name">
-              </div>
-
-              <div class="col-md-6">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Email Address">
-              </div>
-
-            </div>
-
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Company URL (https://)">
-            </div>
-
-            <div class="mb-3">
-              <select class="form-select">
-                <option>Primary Service Interest</option>
-                <option>Frontend Engineering</option>
-                <option>Backend Architecture</option>
-                <option>Cloud Infrastructure</option>
-              </select>
-            </div>
-
-            <div class="mb-3">
-              <textarea
-                class="form-control"
-                rows="5"
-                placeholder="Goals, timeline, key constraints..."></textarea>
-            </div>
-
-            <button class="btn btn-dark w-100 py-3 fw-semibold">
-              SEND INQUIRY
-            </button>
-
-          </form>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
+<app-start-building [serviceOptions]="serviceOptions"></app-start-building>

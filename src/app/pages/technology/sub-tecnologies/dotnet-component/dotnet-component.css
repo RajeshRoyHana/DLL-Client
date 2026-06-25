@@ -48,7 +48,7 @@ section {
 }
 
 .hero-title span {
-  color: #1648c7;
+  color: #08142f;
 }
 
 .hero-text {
@@ -64,6 +64,7 @@ section {
 }
 
 .hero-image {
+  height: 100%;
   width: 100%;
   object-fit: cover;
   border: 1px solid #111;

@@ -42,9 +42,12 @@
         <div class="hero-image-box">
 
           <img
-            src="/images/server.webp"
+            ngSrc="/images/server.webp"
             class="img-fluid hero-image"
-            alt="Cloud Engineering">
+            width="1200"
+            height="675"
+            alt="Cloud Engineering"
+            priority>
 
           <div class="uptime-box">
             <small>UPTIME GUARANTEE</small>
@@ -317,97 +320,9 @@
 
 </section>
 
-<!-- CONTACT -->
-<section class="contact-section">
-
-  <div class="container">
-
-    <div class="row g-5 align-items-start">
-
-      <div class="col-lg-5">
-
-        <h2 class="contact-title">
-          Start Building.
-        </h2>
-
-        <p class="contact-text">
-          Ready to modernize your infrastructure? Connect with our senior cloud architects
-          to discuss your technical roadmap.
-        </p>
-
-        <div class="contact-list">
-
-          <div class="contact-item">
-            engineering@dhakalogic.com
-          </div>
-
-          <div class="contact-item">
-            ssh-rsa AAAAB3NzaC1yc2EA...
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="col-lg-7">
-
-        <div class="form-box">
-
-          <form>
-
-            <div class="row g-3">
-
-              <div class="col-md-6">
-                <label>FULL NAME</label>
-
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Alan Turing">
-              </div>
-
-              <div class="col-md-6">
-                <label>CORPORATE EMAIL</label>
-
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="name@company.com">
-              </div>
-
-            </div>
-
-            <div class="mt-4">
-              <label>PRIMARY TECHNICAL OBJECTIVE</label>
-
-              <select class="form-select">
-                <option>Infrastructure Modernization</option>
-              </select>
-            </div>
-
-            <div class="mt-4">
-              <label>PROJECT PARAMETERS</label>
-
-              <textarea
-                rows="5"
-                class="form-control"
-                placeholder="Briefly describe your current stack and scaling requirements..."></textarea>
-            </div>
-
-            <button class="btn btn-dark submit-btn mt-4">
-              SUBMIT REQUEST
-            </button>
-
-          </form>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+<app-start-building
+  [serviceOptions]="serviceOptions"
+  subtitle="Ready to modernize your infrastructure? Connect with our senior cloud architects to discuss your technical roadmap.">
+</app-start-building>
 
 

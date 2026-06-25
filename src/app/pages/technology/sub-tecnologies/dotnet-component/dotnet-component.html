@@ -39,9 +39,12 @@
 
         <div class="hero-image-wrapper">
           <img
-            src="/images/code.webp"
+            ngSrc="/images/code.webp"
             class="img-fluid hero-image"
-            alt="NET Development">
+            width="1200"
+            height="675"
+            alt="NET Development"
+            priority>
         </div>
 
       </div>
@@ -238,116 +241,8 @@
 
 </section>
 
-<!-- CONTACT -->
-<section class="contact-section">
-
-  <div class="container">
-
-    <div class="row g-5 align-items-start">
-
-      <div class="col-lg-5">
-
-        <h2 class="contact-title">
-          Start <br>
-          Building
-        </h2>
-
-        <p class="contact-text">
-          Initiate the consultation sequence for your end-to-end development engagement.
-          Our architects are ready to review your requirements.
-        </p>
-
-        <div class="contact-info mt-5">
-
-          <div class="contact-item">
-            <div class="icon-box">✉</div>
-
-            <div>
-              <small>EMAIL US</small>
-              <p>hello@dhakalogic.com</p>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="icon-box">↗</div>
-
-            <div>
-              <small>RESPONSE TIME</small>
-              <p>&lt; 24 Engineering Hours</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="col-lg-7">
-
-        <div class="form-box">
-
-          <form>
-
-            <div class="row g-3 mb-3">
-
-              <div class="col-md-6">
-                <label>FULL NAME</label>
-
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="John Doe">
-              </div>
-
-              <div class="col-md-6">
-                <label>WORK EMAIL</label>
-
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="you@company.com">
-              </div>
-
-            </div>
-
-            <div class="mb-3">
-              <label>COMPANY DOMAIN</label>
-
-              <input
-                type="text"
-                class="form-control"
-                placeholder="https://">
-            </div>
-
-            <div class="mb-3">
-              <label>INQUIRY TYPE</label>
-
-              <select class="form-select">
-                <option>.NET Frontend Modernization</option>
-              </select>
-            </div>
-
-            <div class="mb-4">
-              <label>MESSAGE</label>
-
-              <textarea
-                rows="5"
-                class="form-control"
-                placeholder="Brief project overview, goals, and technical constraints..."></textarea>
-            </div>
-
-            <button class="btn btn-dark w-100 submit-btn">
-              SEND INQUIRY
-            </button>
-
-          </form>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+<app-start-building
+  [serviceOptions]="serviceOptions"
+  subtitle="Initiate the consultation sequence for your .NET development engagement. Our architects are ready to review your requirements.">
+</app-start-building>
 

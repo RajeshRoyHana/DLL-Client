@@ -6,7 +6,7 @@
 
             <div class="contact-box mb-4">
 
-                
+
 
                 <h5>Write us directly</h5>
                 <p class="text-muted">
@@ -16,7 +16,7 @@
             </div>
 
             <div class="contact-box mb-4">
-              
+
 
                 <h5>Call us</h5>
                 <p class="text-muted">
@@ -105,18 +105,33 @@
                 </form>
 
             </div>
-              <div class="mt-4" style="border: 1px solid #ddd; overflow: hidden;">
-                <iframe
-                    src="https://maps.google.com/maps?q=Shanta+Forum+Meghna+Tower%2C+187-188B+Bir+Uttam+Mir+Shawkat+Ali+Road%2C+Tejgaon+I%2FA%2C+Dhaka-1208%2C+Bangladesh&output=embed&z=17"
-                    width="100%"
-                    height="500"
-                    style="border:0; display:block;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    title="DLL Office Location - Dhaka, Bangladesh">
-                </iframe>
-            </div>
+           <div class="mt-4 map-container position-relative rounded overflow-hidden">
+
+  <!-- ✅ Preview -->
+  <img src="/images/map-preview.webp"
+       class="w-100"
+       style="height: 450px; object-fit: cover;"
+       [style.display]="mapLoaded ? 'none' : 'block'">
+
+  <!-- ✅ Button -->
+  <button
+    class="btn btn-dark position-absolute top-50 start-50 translate-middle"
+    (click)="loadMap()"
+    [style.display]="mapLoaded ? 'none' : 'block'">
+    View Location →
+  </button>
+
+  <!-- ✅ Map -->
+  <iframe
+    [attr.src]="mapUrl"
+    width="100%"
+    height="450"
+    style="border:0;"
+    loading="lazy"
+    [style.display]="mapLoaded ? 'block' : 'none'">
+  </iframe>
+
+</div>
         </div>
 
     </div>
