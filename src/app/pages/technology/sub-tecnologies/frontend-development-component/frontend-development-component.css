@@ -59,8 +59,7 @@ section {
 }
 
 .hero-image-wrapper {
-  max-width: 420px;
-  margin-left: auto;
+  width: 100%;
 }
 
 .hero-image {

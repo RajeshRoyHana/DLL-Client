@@ -33,7 +33,7 @@ section {
 
 .hero-tag {
   display: inline-block;
-  background: #dfe8ff;
+  background: #eee;;
   color: #4d6ca8;
   font-size: 10px;
   letter-spacing: 1px;
@@ -59,12 +59,10 @@ section {
 }
 
 .hero-image-wrapper {
-  max-width: 420px;
-  margin-left: auto;
+  width: 100%;
 }
 
 .hero-image {
-  height: 100%;
   width: 100%;
   object-fit: cover;
   border: 1px solid #111;
