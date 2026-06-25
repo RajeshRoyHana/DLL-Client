@@ -316,6 +316,10 @@ textarea.form-control {
 /* RESPONSIVE */
 @media (max-width: 991px) {
 
+  .cloud-hero {
+    padding: 70px 0 80px;
+  }
+
   .hero-title,
   .contact-title,
   .section-title,
@@ -334,6 +338,7 @@ textarea.form-control {
 
 @media (max-width: 767px) {
 
+  .cloud-hero,
   .pillar-section,
   .delivery-section,
   .contact-section,

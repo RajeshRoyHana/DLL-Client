@@ -422,6 +422,10 @@ textarea.form-control {
     padding: 70px 0;
   }
 
+  .section {
+    padding: 60px 0;
+  }
+
   .hero-title,
   .contact-title,
   .engineering-title,
@@ -442,5 +446,13 @@ textarea.form-control {
 
   .hero-image-wrapper {
     max-width: 100%;
+  }
+
+  .stats-number {
+    font-size: 28px;
+  }
+
+  .delivery-card {
+    min-height: auto;
   }
 }

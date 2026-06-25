@@ -92,9 +92,33 @@
   padding-bottom: 100px;
 }
 
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 60px 0 40px;
+  }
+}
+
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 0 30px;
+  }
+
   .section-gap {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .pillar-card {
+    padding: 1.25rem;
+  }
+
+  .delivery-step-num {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
   }
 }

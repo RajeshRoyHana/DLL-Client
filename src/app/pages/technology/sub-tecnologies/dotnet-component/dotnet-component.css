@@ -147,7 +147,7 @@ section {
 
 /* DELIVERY */
 .delivery-section {
-  padding: 120px 0;
+  padding: 61px 0;
 }
 
 .delivery-title {
@@ -354,6 +354,10 @@ section {
     font-size: 38px;
   }
 
+  .engineering-card h4 {
+    font-size: 22px;
+  }
+
   .hero-section,
   .engineering-section,
   .delivery-section,
@@ -366,5 +370,15 @@ section {
   .delivery-card,
   .form-box {
     padding: 24px;
+  }
+
+  .delivery-card {
+    min-height: auto;
+  }
+
+  .custom-btn,
+  .custom-btn-light,
+  .submit-btn {
+    width: 100%;
   }
 }

@@ -159,6 +159,22 @@
 }
 
 /* ── Responsive ── */
+@media (max-width: 991.98px) {
+    .security-page .section-padding {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .security-page .security-hero h1 {
+        font-size: clamp(2.4rem, 6vw, 3.5rem);
+    }
+
+    .security-page .hero-visual {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 767.98px) {
     .security-page section {
         padding: 70px 0;
@@ -196,5 +212,21 @@
     .security-page footer,
     .security-page .security-footer {
         padding: 50px 0 25px;
+    }
+
+    .security-page .section-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .security-page .step-circle {
+        width: 60px;
+        height: 60px;
+        font-size: 1.2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .security-page .delivery-step-card {
+        padding: 1.25rem;
     }
 }

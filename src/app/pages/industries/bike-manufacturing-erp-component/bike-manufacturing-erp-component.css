@@ -156,3 +156,53 @@
   line-height: 1;
   margin-bottom: 0.25rem;
 }
+
+/* ── Responsive ── */
+@media (max-width: 991.98px) {
+  .section-padding {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .stats-number {
+    font-size: 2rem;
+  }
+
+  .step-circle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .stats-panel {
+    margin-top: 2rem;
+  }
+
+  .stats-number {
+    font-size: 1.75rem;
+  }
+
+  .step-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .pillar-card,
+  .module-card,
+  .why-card,
+  .delivery-step-card {
+    padding: 1.25rem;
+  }
+
+  .stat-row {
+    padding: 0.5rem 0.75rem;
+  }
+}
