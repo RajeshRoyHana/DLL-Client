@@ -10,3 +10,13 @@
   color: #aaa;
   padding: 60px 0 20px;
 }
+
+.footer-link {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
