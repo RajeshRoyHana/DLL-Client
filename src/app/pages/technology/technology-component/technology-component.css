@@ -178,9 +178,9 @@ section {
 }
 
 /* DELIVERY */
-.delivery-section {
+/* .delivery-section {
   padding: 110px 0;
-}
+} */
 
 .delivery-title {
   font-family: 'Hanken Grotesk', sans-serif;
@@ -202,7 +202,7 @@ section {
   border: 1px solid #ddd;
   padding: 34px;
   position: relative;
-  min-height: 350px;
+  min-height: 250px;
 }
 
 .delivery-number {
@@ -223,6 +223,7 @@ section {
 }
 
 .delivery-card p {
+  margin-top: 35px;
   font-size: 13px;
   line-height: 1.8;
   color: #666;

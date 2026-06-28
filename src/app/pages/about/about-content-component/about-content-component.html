@@ -7,11 +7,10 @@
             <div class="col-lg-3 d-none d-lg-block">
                 <div class="about-sticky-box">
                     <p class="small text-muted">On this page</p>
-                    <a href="#about" class="about-side-link">About us</a>
-                    <a href="#who-we-are" class="about-side-link">Who we are</a>
-                    <a href="#what-we-do" class="about-side-link">What we do</a>
-                    <a href="#how-we-work" class="about-side-link">How we work</a>
-                    <a href="#founder" class="about-side-link">Meet the founder</a>
+                    <a  class="about-side-link" [class.active]="activeSection() === 'about'">About us</a>
+                    <a  class="about-side-link" [class.active]="activeSection() === 'who-we-are'">Who we are</a>
+                    <a  class="about-side-link" [class.active]="activeSection() === 'what-we-do'">What we do</a>
+                    <a  class="about-side-link" [class.active]="activeSection() === 'how-we-work'">How we work</a>
                 </div>
             </div>
             <!-- Content -->

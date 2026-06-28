@@ -156,7 +156,8 @@ body {
 /* DELIVERY */
 .delivery-section {
   background: #fff;
-  padding: 80px 0;
+  padding-bottom: 30px;
+  padding-top: 10px;
 }
 
 .delivery-label {
@@ -177,9 +178,10 @@ body {
   border-left: 2px solid #d8d8d8;
   padding-left: 26px;
   margin-bottom: 55px;
+  transition: border-color 0.2s ease;
 }
 
-.active-row {
+.delivery-row:hover {
   border-color: #000;
 }
 
