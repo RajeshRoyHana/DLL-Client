@@ -15,7 +15,7 @@
       <ul class="navbar-nav mx-auto gap-4" (click)="onNavClick($event)">
         <li class="nav-item dropdown">
           <div class="d-flex align-items-center">
-            <a class="nav-link pe-1" routerLink="/services">
+            <a class="nav-link pe-1" routerLink="/services" routerLinkActive="active">
               Services
             </a>
             <button class="nav-link dropdown-toggle dropdown-toggle-split" type="button" data-bs-toggle="dropdown"
@@ -23,12 +23,12 @@
             </button>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" routerLink="/development">
+                <a class="dropdown-item" routerLink="/development" routerLinkActive="active">
                   Development
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" routerLink="/ai-web">
+                <a class="dropdown-item" routerLink="/ai-web" routerLinkActive="active">
                   AI-Development Tool
                 </a>
               </li>
@@ -37,7 +37,7 @@
         </li>
         <li class="nav-item dropdown">
           <div class="d-flex align-items-center">
-            <a class="nav-link pe-1" routerLink="/technology">
+            <a class="nav-link pe-1" routerLink="/technology" routerLinkActive="active">
               Technologies
             </a>
             <button class="nav-link dropdown-toggle dropdown-toggle-split" type="button" data-bs-toggle="dropdown"
@@ -45,42 +45,42 @@
             </button>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" routerLink="/technology/dotnet">
+                <a class="dropdown-item" routerLink="/technology/dotnet" routerLinkActive="active">
                   .NET Development
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" routerLink="/technology/frontend-development">
+                <a class="dropdown-item" routerLink="/technology/frontend-development" routerLinkActive="active">
                   Frontend Development
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" routerLink="/technology/cloud-engineering">
+                <a class="dropdown-item" routerLink="/technology/cloud-engineering" routerLinkActive="active">
                   Cloud Engineering
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" routerLink="/technology/devops-engineering">
+                <a class="dropdown-item" routerLink="/technology/devops-engineering" routerLinkActive="active">
                   DevOps Engineering
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" routerLink="/technology/database-engineering">
+                <a class="dropdown-item" routerLink="/technology/database-engineering" routerLinkActive="active">
                   Database Engineering
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" routerLink="/technology/security-engineering">
+                <a class="dropdown-item" routerLink="/technology/security-engineering" routerLinkActive="active">
                   Security Engineering
                 </a>
               </li>
             </ul>
           </div>
         </li>
-        <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/industries">Industry</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/faq">FAQ</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/about" routerLinkActive="active">About</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/industries" routerLinkActive="active">Industry</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/faq" routerLinkActive="active">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a></li>
       </ul>
       <button class="btn btn-dark mt-3 mt-lg-0" [class.contact-page-btn]="isContactPage">Get Started</button>
     </div>

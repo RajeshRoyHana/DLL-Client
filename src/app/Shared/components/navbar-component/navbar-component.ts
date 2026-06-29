@@ -1,11 +1,11 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import { Router, NavigationEnd, RouterLink } from '@angular/router';
+import { Router, NavigationEnd, RouterLink, RouterLinkActive } from '@angular/router';
 import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-navbar-component',
-  imports: [RouterLink, NgOptimizedImage],
+  imports: [RouterLink, RouterLinkActive, NgOptimizedImage],
   templateUrl: './navbar-component.html',
   styleUrl: './navbar-component.css',
 })
