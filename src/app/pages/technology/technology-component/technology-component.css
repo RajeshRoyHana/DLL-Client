@@ -52,7 +52,7 @@ section {
 }
 
 .hero-title {
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 66px;
   line-height: 0.95;
   font-weight: 700;
@@ -91,7 +91,7 @@ section {
 }
 
 .engineering-title {
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 58px;
   line-height: 1;
   font-weight: 700;
@@ -123,7 +123,7 @@ section {
 }
 
 .engineering-card h4 {
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 21px;
   line-height: 1.25;
   font-weight: 700;
@@ -183,7 +183,7 @@ section {
 } */
 
 .delivery-title {
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 54px;
   font-weight: 700;
   letter-spacing: -2px;
@@ -209,14 +209,14 @@ section {
   position: absolute;
   top: 12px;
   right: 18px;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 66px;
   font-weight: 700;
   color: #dfe5f5;
 }
 
 .delivery-card h4 {
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 31px;
   font-weight: 600;
   margin-bottom: 18px;
@@ -224,9 +224,9 @@ section {
 
 .delivery-card p {
   margin-top: 35px;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.8;
-  color: #666;
+  color: #080808;
   margin-bottom: 24px;
 }
 
@@ -248,7 +248,7 @@ section {
 }
 
 .contact-title {
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 72px;
   line-height: 0.95;
   font-weight: 700;
@@ -344,7 +344,7 @@ textarea.form-control {
 }
 
 .footer-logo {
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 22px;
