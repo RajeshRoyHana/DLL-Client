@@ -39,7 +39,9 @@
 .hard-border {
   border: 1px solid #ddd;
 }
-
+.header-dash {
+  margin-top: 1rem;
+}
 .pillar-card {
   background-color: #ffffff;
   padding: 2rem;

@@ -15,9 +15,8 @@
           </h1>
 
           <p class="fs-5 text-muted mb-5 col-lg-10">
-            High-concurrency architecture, mission-critical stability, and
-            sub-millisecond query performance for enterprise SQL Server
-            environments.
+            We design, optimize, and maintain high-performance SQL Server environments built for reliability, security, and scale. 
+            From performance tuning to high availability and disaster recovery, we help keep your data layer fast, stable, and production-ready.
           </p>
 
           <div class="d-flex flex-wrap gap-3">
@@ -63,8 +62,8 @@
 
             <h3 class="h3 mb-3 fw-semibold">Performance Tuning</h3>
             <p class="text-muted mb-4">
-              Deep index analysis, execution plan optimization, and memory
-              pressure resolution for high-load systems.
+              Deep query analysis, index optimization,
+              execution plan review, and memory tuning to improve SQL Server performance under real production workloads.
             </p>
 
             <div class="d-flex gap-2">
@@ -73,6 +72,9 @@
               </span>
               <span class="badge bg-light text-dark ls-wide p-2">
                 INDEXING
+              </span>
+              <span class="badge bg-light text-dark ls-wide p-2">
+                EXECUTION_PLAN
               </span>
             </div>
           </div>
@@ -87,11 +89,10 @@
             </div>
 
             <h3 class="h3 mb-3 fw-semibold">
-              High Availability (AlwaysOn)
+              High Availability
             </h3>
             <p class="text-muted mb-4">
-              Zero-downtime failover clusters and distributed availability
-              groups engineered for 99.999% uptime.
+              Resilient SQL Server architectures using failover clustering, replication, and availability groups to support uptime, continuity, and disaster recover.
             </p>
 
             <div class="d-flex gap-2">
@@ -100,6 +101,9 @@
               </span>
               <span class="badge bg-light text-dark ls-wide p-2">
                 DR_STRATEGY
+              </span>
+              <span class="badge bg-light text-dark ls-wide p-2">
+                DISASTER_RECOVERY
               </span>
             </div>
           </div>
@@ -117,9 +121,19 @@
 
                 <h3 class="h3 mb-3 fw-semibold">Data Warehousing</h3>
                 <p class="text-muted mb-0">
-                  ETL/ELT pipeline construction and PolyBase integration for
-                  petabyte-scale analytical workloads.
+                  ETL/ELT pipeline design, reporting database architecture, and analytical workload optimization for faster business intelligence and decision-making.
                 </p>
+                <div class="d-flex gap-2">
+              <span class="badge bg-light text-dark ls-wide p-2">
+                ETL_PIPELINES
+              </span>
+              <span class="badge bg-light text-dark ls-wide p-2">
+                REPORTING
+              </span>
+              <span class="badge bg-light text-dark ls-wide p-2">
+                ANALYTICS
+              </span>
+            </div>
               </div>
 
               <div class="col-md-6">
@@ -141,15 +155,12 @@
 
             <h3 class="h3 mb-3 fw-semibold">SQL Server Security</h3>
             <p class="text-white-50 mb-4">
-              Transparent Data Encryption (TDE), dynamic data masking, and
-              row-level security hardening.
+              Transparent Data Encryption, dynamic data masking, access control, auditing, and row-level security to protect sensitive business data.
             </p>
 
             <a
-              class="text-decoration-none text-white-50 ls-wide d-flex align-items-center gap-2"
-              href="#"
-            >
-              COMPLIANCE AUDIT &rarr;
+              class="text-decoration-none text-white-50 ls-wide d-flex align-items-center gap-2">
+              SECURITY AUDI &rarr;
             </a>
           </div>
         </div>
@@ -168,15 +179,14 @@
       </div>
 
       <!-- Step 1 -->
-      <div class="row mb-5 pt-5">
+      <div class="row mb-5 pt-2">
         <div class="col-md-4 mb-4">
           <div class="d-flex align-items-center gap-3 mb-3">
             <div class="delivery-step-num">01</div>
             <h3 class="mb-0 fw-semibold">Plan</h3>
           </div>
           <p class="text-muted">
-            Defining technical constraints, capacity planning, and architectural
-            blueprints for the MSSQL ecosystem.
+            We assess your current database environment, identify performance bottlenecks, and define a clear architecture and optimization roadmap.
           </p>
         </div>
 
@@ -188,34 +198,31 @@
 
             <div class="vstack gap-4">
               <div class="d-flex gap-3 pb-3 border-bottom">
-                <span class="fw-bold text-dark">&mdash;</span>
+                <span class="fw-bold text-dark header-dash">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">Workload Profile Analysis</p>
                   <p class="small text-muted mb-0">
-                    OLTP vs. OLAP profiling to determine TempDB placement and
-                    storage IOPS requirements.
+                    Analyze OLTP, OLAP, reporting, and API workloads to define performance, storage, and indexing requirement.
                   </p>
                 </div>
               </div>
 
               <div class="d-flex gap-3 pb-3 border-bottom">
-                <span class="fw-bold text-dark">&mdash;</span>
+                <span class="fw-bold text-dark header-dash">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">RPO/RTO Definition</p>
                   <p class="small text-muted mb-0">
-                    Strict alignment of business continuity goals with hardware
-                    and networking capabilities.
+                    Define recovery objectives, backup strategy, failover expectations, and monitoring requirement.
                   </p>
                 </div>
               </div>
 
               <div class="d-flex gap-3">
-                <span class="fw-bold text-dark">&mdash;</span>
+                <span class="fw-bold text-dark header-dash">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">Hardware Sizing (Core-to-RAM Ratio)</p>
                   <p class="small text-muted mb-0">
-                    Optimization of license costs by balancing CPU core counts
-                    against memory allocation.
+                    Review CPU, memory, storage, and I/O requirements to align infrastructure with workload demand.
                   </p>
                 </div>
               </div>
@@ -225,15 +232,14 @@
       </div>
 
       <!-- Step 2 -->
-      <div class="row mb-5 pt-5">
+      <div class="row mb-5 pt-2">
         <div class="col-md-4 mb-4">
           <div class="d-flex align-items-center gap-3 mb-3">
             <div class="delivery-step-num">02</div>
             <h3 class="mb-0 fw-semibold">Build</h3>
           </div>
           <p class="text-muted">
-            Implementation of high-availability clusters and secure database
-            foundations with CI/CD integration.
+            We implement secure database foundations, high-availability configuration, automation, and CI/CD-ready deployment processes.
           </p>
         </div>
 
@@ -245,29 +251,27 @@
 
             <div class="vstack gap-4">
               <div class="d-flex gap-3 pb-3 border-bottom">
-                <span class="fw-bold text-dark">&mdash;</span>
+                <span class="fw-bold text-dark header-dash">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">Instance Level Hardening</p>
                   <p class="small text-muted mb-0">
-                    Configuration of maximum memory, parallelism (MAXDOP), and
-                    surface area reduction.
+                    Configure security settings, permissions, memory allocation, parallelism, and other instance-level parameters.
                   </p>
                 </div>
               </div>
 
               <div class="d-flex gap-3 pb-3 border-bottom">
-                <span class="fw-bold text-dark">&mdash;</span>
+                <span class="fw-bold text-dark header-dash">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">HA/DR Deployment</p>
                   <p class="small text-muted mb-0">
-                    Windows Server Failover Clustering (WSFC) and Availability
-                    Group listener configuration.
+                    Deploy failover clustering, availability groups, backup strategies, and disaster recovery configuration.
                   </p>
                 </div>
               </div>
 
               <div class="d-flex gap-3">
-                <span class="fw-bold text-dark">&mdash;</span>
+                <span class="fw-bold text-dark header-dash">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">Automation Scripting</p>
                   <p class="small text-muted mb-0">
@@ -282,15 +286,14 @@
       </div>
 
       <!-- Step 3 -->
-      <div class="row pt-5">
+      <div class="row pt-2">
         <div class="col-md-4 mb-4">
           <div class="d-flex align-items-center gap-3 mb-3">
             <div class="delivery-step-num">03</div>
             <h3 class="mb-0 fw-semibold">Launch</h3>
           </div>
           <p class="text-muted">
-            Final migration, performance verification, and handover to
-            continuous monitoring systems.
+            We validate performance, verify backup and recovery processes, and hand over a monitored, production-ready database environmen.
           </p>
         </div>
 
@@ -302,34 +305,31 @@
 
             <div class="vstack gap-4">
               <div class="d-flex gap-3 pb-3 border-bottom">
-                <span class="fw-bold text-dark">&mdash;</span>
+                <span class="fw-bold text-dark header-dash">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">Performance Baseline Validation</p>
                   <p class="small text-muted mb-0">
-                    Capturing initial performance metrics to ensure alignment
-                    with planning benchmarks.
+                    Capture query, latency, CPU, memory, and I/O benchmarks to confirm production.
                   </p>
                 </div>
               </div>
 
               <div class="d-flex gap-3 pb-3 border-bottom">
-                <span class="fw-bold text-dark">&mdash;</span>
+                <span class="fw-bold text-dark header-dash">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">Backup Chain Verification</p>
                   <p class="small text-muted mb-0">
-                    Full, differential, and transaction log backup validation
-                    with point-in-time recovery testing.
+                    Validate full, differential, and transaction log backups with point-in-time recovery testing.
                   </p>
                 </div>
               </div>
 
               <div class="d-flex gap-3">
-                <span class="fw-bold text-dark">&mdash;</span>
+                <span class="fw-bold text-dark header-dash">&mdash;</span>
                 <div>
                   <p class="fw-bold mb-1">24/7 Monitoring Handover</p>
                   <p class="small text-muted mb-0">
-                    Integration with SQL Server Agent alerts and external
-                    monitoring tools (PMM/Zabbix).
+                    Integrate SQL Server Agent alerts and monitoring dashboards for ongoing database health and performance tracking.
                   </p>
                 </div>
               </div>
