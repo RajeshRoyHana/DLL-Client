@@ -1,9 +1,10 @@
 import { Component, AfterViewInit, OnDestroy, Inject, PLATFORM_ID, signal } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-about-content-component',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './about-content-component.html',
 })
 export class AboutContentComponent implements AfterViewInit, OnDestroy {
