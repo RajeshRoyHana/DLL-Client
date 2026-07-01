@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { StartBuildingComponent } from '../../../../Shared/components/start-building-component/start-building-component';
 
 @Component({
   selector: 'app-dotnet-component',
-  imports: [NgOptimizedImage, StartBuildingComponent],
+  imports: [NgOptimizedImage],
   templateUrl: './dotnet-component.html',
   styleUrl: './dotnet-component.css',
 })

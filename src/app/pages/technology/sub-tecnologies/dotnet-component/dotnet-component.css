@@ -72,6 +72,16 @@ section {
   color: white;
 }
 
+.engineering-tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.55);
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 5px 12px;
+  text-transform: uppercase;
+}
+
 .engineering-title {
   font-size: 56px;
   line-height: 1;
@@ -81,6 +91,7 @@ section {
 .engineering-text {
   color: rgba(255,255,255,0.7);
   line-height: 1.8;
+  margin-top: 52px;
 }
 
 .engineering-grid {
@@ -93,9 +104,12 @@ section {
 }
 
 .engineering-card small {
+  display: block;
   color: rgba(255,255,255,0.45);
   font-size: 10px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .engineering-card h4 {
@@ -153,9 +167,11 @@ section {
 }
 
 .delivery-subtitle {
+  display: block;
   font-size: 10px;
   letter-spacing: 4px;
   color: #777;
+  margin-bottom: 8px;
 }
 
 .delivery-card {
@@ -163,7 +179,7 @@ section {
   border: 1px solid #ddd;
   padding: 35px;
   position: relative;
-  min-height: 320px;
+  min-height: 360px;
 }
 
 .delivery-number {
