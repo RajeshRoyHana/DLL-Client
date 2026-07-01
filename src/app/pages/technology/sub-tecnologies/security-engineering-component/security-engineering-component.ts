@@ -1,10 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { StartBuildingComponent } from '../../../../Shared/components/start-building-component/start-building-component';
 
 @Component({
   selector: 'app-security-engineering-component',
-  imports: [CommonModule, StartBuildingComponent],
+  imports: [CommonModule],
   templateUrl: './security-engineering-component.html',
   styleUrl: './security-engineering-component.css',
 })

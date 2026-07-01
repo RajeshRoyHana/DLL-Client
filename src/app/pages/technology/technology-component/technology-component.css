@@ -210,7 +210,8 @@ section {
   border: 1px solid #ddd;
   padding: 34px;
   position: relative;
-  min-height: 250px;
+  height: 280px;
+  overflow: hidden;
 }
 
 .delivery-number {
@@ -245,6 +246,53 @@ section {
   font-size: 10px;
   letter-spacing: 1px;
   color: #333;
+}
+
+/* Sprint / Agile delivery card — black */
+.delivery-card-sprint {
+  background: #111;
+  border-color: #111;
+}
+
+.delivery-card-sprint h3,
+.delivery-card-sprint p {
+  color: #fff;
+}
+
+.delivery-card-sprint .delivery-number {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/* Database card — dark charcoal */
+.accent-blue-card {
+  background: #111;
+  border: 1px solid #111;
+}
+
+.text-accent-blue {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* Security card — off-white / light gray */
+.accent-teal-card {
+  background: #f0f0f0;
+  border: 2px solid #111;
+}
+
+.accent-teal-card .service-number,
+.accent-teal-card .service-title,
+.accent-teal-card .service-text,
+.accent-teal-card .service-link {
+  color: #111 !important;
+}
+
+.text-accent-teal {
+  color: rgba(0, 0, 0, 0.45) !important;
+}
+
+/* Shared light text for dark accent cards */
+.text-accent-light {
+  color: rgba(255, 255, 255, 0.72) !important;
 }
 
 /* CONTACT */
@@ -341,55 +389,7 @@ textarea.form-control {
   width: 100%;
 }
 
-/* FOOTER */
-.footer-section {
-  background: #08142f;
-  color: #fff;
-  padding: 85px 0;
-}
 
-.footer-logo {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 22px;
-}
-
-.footer-text {
-  color: rgba(255,255,255,0.65);
-  font-size: 13px;
-  line-height: 1.9;
-}
-
-.footer-heading {
-  font-size: 10px;
-  letter-spacing: 1.6px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin-bottom: 12px;
-}
-
-.footer-links a {
-  color: rgba(255,255,255,0.7);
-  text-decoration: none;
-  font-size: 13px;
-}
-
-.footer-btn {
-  border-radius: 0;
-  border: 1px solid rgba(255,255,255,0.5);
-  color: #fff;
-  height: 48px;
-  padding: 0 32px;
-}
 
 /* RESPONSIVE */
 @media (max-width: 991px) {

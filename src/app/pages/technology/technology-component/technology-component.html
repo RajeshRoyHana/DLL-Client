@@ -21,17 +21,6 @@
           High-performance engineering solutions for modern enterprises.
           We build architecturally rigorous software that scales with your growth.
         </p>
-
-        <div class="d-flex flex-wrap gap-3">
-          <button class="btn btn-dark px-4 py-3 fw-semibold">
-            Start Building →
-          </button>
-
-          <button class="btn btn-outline-dark px-4 py-3">
-            View Capabilities
-          </button>
-        </div>
-
       </div>
 
       <!-- RIGHT -->
@@ -58,7 +47,6 @@
 
       <div class="col-lg-8">
         <p class="section-label mb-2">
-          OUR EXPERTISE
         </p>
 
         <h2 class="section-title mb-3">
@@ -128,7 +116,7 @@
         </div>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <div class="service-card h-100">
           <small class="service-number">03</small>
 
@@ -147,20 +135,40 @@
         </div>
       </div>
 
-      <div class="col-lg-6">
-        <div class="service-card h-100">
-          <small class="service-number">04</small>
+      <div class="col-lg-4">
+        <div class="service-card accent-blue-card h-100">
+          <small class="service-number text-accent-blue">04</small>
+
+          <h3 class="service-title mt-4 text-white">
+            Database
+          </h3>
+
+          <p class="service-text text-accent-light">
+            Robust data architecture with optimised query performance,
+            migrations and multi-cloud persistence strategies.
+          </p>
+
+          <a routerLink="/technology/database-engineering" class="service-link text-white">
+            EXPLORE DATA ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="service-card accent-teal-card h-100">
+          <small class="service-number text-accent-teal">05</small>
 
           <h3 class="service-title mt-4">
-            DevOps
+            Security
           </h3>
 
           <p class="service-text">
-            Kubernetes orchestration and full-spectrum CI/CD automation.
+            End-to-end security engineering: threat modelling, penetration testing,
+            and compliance-ready hardened deployments.
           </p>
 
-          <a routerLink="/technology/devops-engineering" class="service-link">
-            LEARN MORE ↗
+          <a routerLink="/technology/security-engineering" class="service-link">
+            SECURE NOW ↗
           </a>
         </div>
       </div>
@@ -176,7 +184,7 @@
 
     <div class="text-center mb-5">
       <p class="section-label mb-2">
-        DISCOVERY, BUILD & LAUNCH
+        SCRUM AGILE — DISCOVERY, BUILD & LAUNCH
       </p>
 
       <h2 class="section-title">
@@ -186,7 +194,7 @@
 
     <div class="row g-4">
 
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <div class="delivery-card">
           <div class="delivery-number">01</div>
 
@@ -198,9 +206,21 @@
         </div>
       </div>
 
-      <div class="col-lg-4">
-        <div class="delivery-card">
+      <div class="col-lg-3">
+        <div class="delivery-card delivery-card-sprint">
           <div class="delivery-number">02</div>
+
+          <h3>Sprint</h3>
+
+          <p>
+            Two-week scrum sprints with daily stand-ups, backlog refinement and sprint reviews keeping every stakeholder aligned.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="delivery-card">
+          <div class="delivery-number">03</div>
 
           <h3>Build</h3>
 
@@ -211,9 +231,9 @@
         </div>
       </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <div class="delivery-card">
-          <div class="delivery-number">03</div>
+          <div class="delivery-number">04</div>
 
           <h3>Launch</h3>
 
@@ -228,65 +248,5 @@
   </div>
 </section>
 
-<!-- BLOG -->
-<section class="section bg-white">
-  <div class="container">
-
-    <div class="d-flex justify-content-between align-items-center mb-5">
-      <h2 class="section-title m-0">
-        Related Reading
-      </h2>
-
-      <a href="#" class="service-link">
-        ALL ARTICLES ↗
-      </a>
-    </div>
-
-    <div class="row g-4">
-
-      <div class="col-lg-3 col-md-6">
-        <div class="blog-card">
-          <img ngSrc="/images/code.webp" class="img-fluid" width="600" height="400" alt="Custom Development" decoding="async">
-
-          <h5>
-            Custom Development for Scale
-          </h5>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="blog-card">
-          <img ngSrc="/images/ai4.webp" class="img-fluid" width="600" height="400" alt="AI Coding Assistants" decoding="async">
-
-          <h5>
-            AI Coding Assistants in Production Environments
-          </h5>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="blog-card">
-          <img ngSrc="/images/laptopImg.webp" class="img-fluid" width="600" height="400" alt="Digital Infrastructure Development" decoding="async">
-
-          <h5>
-            The New Era of Digital Infrastructure Development
-          </h5>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="blog-card">
-          <img ngSrc="/images/treeImg.webp" class="img-fluid" width="600" height="400" alt="AI Co-Pilots for Engineering Teams" decoding="async">
-
-          <h5>
-            AI Co-Pilots for Productive Engineering Teams
-          </h5>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
 
 <app-start-building [serviceOptions]="serviceOptions"></app-start-building>
