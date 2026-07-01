@@ -4,7 +4,8 @@ import { DevelopmentHeroComponent } from "../development-hero-component/developm
 @Component({
   selector: 'app-development',
   imports: [DevelopmentHeroComponent],
-  templateUrl: './development.component.html'
+  templateUrl: './development.component.html',
+  styleUrl: './development.component.css'
 })
 export class DevelopmentComponent
 {
