@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { StartBuildingComponent } from '../../../../Shared/components/start-building-component/start-building-component';
 
 @Component({
   selector: 'app-frontend-development-component',
-  imports: [NgOptimizedImage, StartBuildingComponent],
+  imports: [NgOptimizedImage],
   templateUrl: './frontend-development-component.html',
   styleUrl: './frontend-development-component.css',
 })

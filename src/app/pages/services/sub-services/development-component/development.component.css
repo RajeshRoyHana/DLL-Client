@@ -1,0 +1,32 @@
+/* Responsive delivery card adjustments */
+.delivery-card {
+  min-height: 180px;
+}
+
+/* Medium devices (tablets, 768px–991px) */
+@media (max-width: 991.98px) {
+  .delivery-card {
+    min-height: 160px;
+    padding: 24px 20px;
+  }
+
+  .delivery-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small devices (phones, < 768px) */
+@media (max-width: 767.98px) {
+  .delivery-card {
+    min-height: unset;
+    padding: 20px 16px;
+  }
+
+  .delivery-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .delivery-number {
+    font-size: 2.5rem !important;
+  }
+}
