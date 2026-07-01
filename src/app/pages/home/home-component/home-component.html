@@ -29,14 +29,6 @@
 }
 
 @defer (on viewport) {
-  <app-home-office-location-component></app-home-office-location-component>
-} @placeholder {
-  <div class="container my-5 text-center defer-placeholder">
-    <p>Loading office locations...</p>
-  </div>
-}
-
-@defer (on viewport) {
   <app-home-strategy-component></app-home-strategy-component>
 } @placeholder {
   <div class="container my-5 text-center defer-placeholder">
@@ -45,14 +37,22 @@
 }
 
 @defer (on viewport) {
-  <section class="container my-5">
+  <app-home-office-location-component></app-home-office-location-component>
+} @placeholder {
+  <div class="container my-5 text-center defer-placeholder">
+    <p>Loading office locations...</p>
+  </div>
+}
+
+@defer (on viewport) {
+  <section class="container mb-5">
     <div class="home-cta">
       <div>
         <h2>READY FOR ENGINEERED EXCELLENCE?</h2>
         <p>Schedule a deep-dive consultation.</p>
       </div>
 
-      <button class="btn">START A TECHNICAL CONSULTATION →</button>
+      <button class="btn" routerLink="/contact">START A TECHNICAL CONSULTATION →</button>
     </div>
   </section>
 } @placeholder {
