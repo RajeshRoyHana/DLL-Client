@@ -67,15 +67,15 @@ section {
 
 /* ENGINEERING */
 .engineering-section {
-  background: #08142f;
+  background: #ffffff;
   padding: 110px 0;
-  color: white;
+  color: black;
 }
 
 .engineering-tag {
   display: inline-block;
-  background: rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.55);
+  background: rgba(0,0,0,0.08);
+  color: rgba(0,0,0,0.55);
   font-size: 10px;
   letter-spacing: 2px;
   padding: 5px 12px;
@@ -89,13 +89,13 @@ section {
 }
 
 .engineering-text {
-  color: rgba(255,255,255,0.7);
+  color: rgba(0,0,0,0.7);
   line-height: 1.8;
   margin-top: 52px;
 }
 
 .engineering-grid {
-  border-color: rgba(255,255,255,0.12) !important;
+  border-color: rgba(0,0,0,0.12) !important;
 }
 
 .engineering-card {
@@ -105,7 +105,7 @@ section {
 
 .engineering-card small {
   display: block;
-  color: rgba(255,255,255,0.45);
+  color: rgba(0,0,0,0.45);
   font-size: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -120,9 +120,16 @@ section {
 }
 
 .engineering-card p {
-  color: rgba(255,255,255,0.72);
+  color: rgba(0,0,0,0.72);
   line-height: 1.8;
   font-size: 15px;
+}
+
+.custom-border-bottom {
+  border-bottom: 1px solid #181717 !important;
+}
+.custom-border-end {
+  border-right: 1px solid #181717 !important;
 }
 
 /* STACK */

@@ -37,7 +37,7 @@ section {
 }
 
 .custom-btn {
-  background: #000;
+  background: #202020;
   border: none;
 }
 
@@ -265,13 +265,19 @@ section {
 
 /* Database card — dark charcoal */
 .accent-blue-card {
-  background: #111;
+  background: #202020;
   border: 1px solid #111;
 }
 
 .text-accent-blue {
   color: rgba(255, 255, 255, 0.45) !important;
 }
+
+.custom-border-bottom {
+  border-bottom-color: #212529 !important;
+}
+
+
 
 /* Security card — off-white / light gray */
 .accent-teal-card {
@@ -283,7 +289,9 @@ section {
 .accent-teal-card .service-title,
 .accent-teal-card .service-text,
 .accent-teal-card .service-link {
-  color: #111 !important;
+  color: #000 !important;
+  text-decoration: none;
+
 }
 
 .text-accent-teal {

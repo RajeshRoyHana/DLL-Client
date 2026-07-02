@@ -33,7 +33,7 @@
 .section-line {
   width: 80px;
   height: 4px;
-  background: #000;
+  background: #202020;
 }
 
 .hard-border {
@@ -62,7 +62,7 @@
 .delivery-step-num {
   width: 48px;
   height: 48px;
-  background-color: #000;
+  background-color: #202020;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@
 }
 
 .contact-card {
-  background-color: #000;
+  background-color: #202020;
   padding: 3rem;
   position: relative;
   overflow: hidden;

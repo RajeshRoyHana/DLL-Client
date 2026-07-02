@@ -144,13 +144,13 @@ section {
 
 /* ENGINEERING */
 .engineering-section {
-  background: #08142f;
+  background: #ffffff;
   padding: 110px 0;
-  color: white;
+  color: #000;
 }
 
 .engineering-label {
-  color: rgba(255, 255, 255, 0.55);
+  color: #555;
   font-size: 10px;
   letter-spacing: 2px;
 }
@@ -162,12 +162,20 @@ section {
 }
 
 .engineering-text {
-  color: rgba(255, 255, 255, 0.7);
+  color: #444;
   line-height: 1.8;
 }
 
 .engineering-grid {
-  border-color: rgba(255, 255, 255, 0.12) !important;
+  border-color: #ddd !important;
+}
+
+
+.custom-border-bottom {
+  border-bottom: 1px solid #181717 !important;
+}
+.custom-border-end {
+  border-right: 1px solid #181717 !important;
 }
 
 .engineering-card {
@@ -176,7 +184,7 @@ section {
 }
 
 .engineering-card small {
-  color: rgba(255, 255, 255, 0.45);
+  color: #888;
   font-size: 10px;
   letter-spacing: 1px;
 }
@@ -189,7 +197,7 @@ section {
 }
 
 .engineering-card p {
-  color: rgba(255, 255, 255, 0.72);
+  color: #555;
   line-height: 1.8;
   font-size: 15px;
 }
