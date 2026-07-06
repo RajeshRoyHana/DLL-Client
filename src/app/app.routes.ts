@@ -83,8 +83,8 @@ export const routes: Routes = [
   {
     path: 'industries',
     loadComponent: () =>
-      import('./pages/industries/bike-manufacturing-erp-component/bike-manufacturing-erp-component')
-        .then(m => m.BikeManufacturingErpComponent)
+      import('./pages/industries/manufacturing-erp-component/manufacturing-erp-component')
+        .then(m => m.ManufacturingErpComponent)
   },
   {
     path: '**',

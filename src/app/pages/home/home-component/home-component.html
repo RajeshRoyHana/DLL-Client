@@ -21,14 +21,6 @@
 }
 
 @defer (on viewport) {
-  <app-home-service-component></app-home-service-component>
-} @placeholder {
-  <div class="container my-5 text-center defer-placeholder">
-    <p>Loading services...</p>
-  </div>
-}
-
-@defer (on viewport) {
   <app-home-strategy-component></app-home-strategy-component>
 } @placeholder {
   <div class="container my-5 text-center defer-placeholder">
@@ -36,13 +28,15 @@
   </div>
 }
 
+
 @defer (on viewport) {
-  <app-home-office-location-component></app-home-office-location-component>
+  <app-home-service-component></app-home-service-component>
 } @placeholder {
   <div class="container my-5 text-center defer-placeholder">
-    <p>Loading office locations...</p>
+    <p>Loading services...</p>
   </div>
 }
+
 
 @defer (on viewport) {
   <section class="container mb-5">
